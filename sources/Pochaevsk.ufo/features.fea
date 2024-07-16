@@ -1,0 +1,2155 @@
+languagesystem DFLT dflt;
+languagesystem cyrl dflt;
+languagesystem geor dflt;
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup ccmpCanonicalCompositionandPrecomposedGlyphs {
+  lookupflag 0;
+    sub \uni0486 \acutecomb  by \uniE001;
+    sub \uni0486 \gravecomb  by \uniE003;
+    sub \uniA64B \gravecomb  by \uniE8E3;
+    sub \afii10074 \uni0308  by \afii10075;
+    sub \uniA64B \uni0311  by \uniE8E5;
+    sub \afii10194 \acutecomb  by \uniE901;
+    sub \afii10194 \gravecomb  by \uniE903;
+    sub \afii10194 \uni0311  by \uniE904;
+    sub \afii10026 \uni0306  by \afii10027;
+    sub \uniA64B \acutecomb  by \uniE8E1;
+    sub \afii10103 \uni0307  by \uniE926;
+    sub \afii10148 \uni030F  by \uni0476;
+    sub \afii10196 \uni030F  by \uni0477;
+    sub \uni1C82 \afii10085  by \uni0479;
+    sub \afii10055 \uni0308  by \afii10056;
+    sub \afii10103 \uni0308  by \afii10104;
+    sub \afii10070 \gravecomb  by \uni0450;
+    sub \afii10022 \gravecomb  by \uni0400;
+    sub \afii10022 \uni0308  by \afii10023;
+    sub \afii10020 \acutecomb  by \afii10052;
+    sub \afii10028 \acutecomb  by \afii10061;
+    sub \afii10026 \gravecomb  by \uni040D;
+    sub \afii10037 \uni0306  by \afii10062;
+    sub \afii10070 \uni0308  by \afii10071;
+    sub \afii10068 \acutecomb  by \afii10100;
+    sub \afii10076 \acutecomb  by \afii10109;
+    sub \afii10085 \uni0306  by \afii10110;
+    sub \uni0486 \uni0311  by \uniE005;
+    sub \uni2DF3 \uni0487  by \uni2DF30487;
+    sub \uni047E \acutecomb  by \uni047E0301;
+    sub \uni047F \acutecomb  by \uni047F0301;
+    sub \afii10103 \uni0483  by \uniE925;
+    sub \afii10194 \uni0486  by \uni04630486;
+} ccmpCanonicalCompositionandPrecomposedGlyphs;
+
+lookup ccmpSecondRoundofPrecomposedGlyphs {
+  lookupflag 0;
+    sub \uniA64C \uniE005  by \uni047C;
+    sub \uniA64D \uniE005  by \uni047D;
+    sub \uni2DE1 \uni0487  by \uni2DE10487;
+    sub \uni2DE2 \uni0487  by \uni2DE20487;
+    sub \uni2DE9 \uni0487  by \uni2DE90487;
+    sub \uni2DEA \uni0487  by \uni2DEA0487;
+    sub \uni2DEC \uni0487  by \uni2DEC0487;
+    sub \uni2DED \uni0487  by \uni2DED0487;
+    sub \uni2DF1 \uni0487  by \uni2DF10487;
+    sub \uni2DE6 \uni0487  by \uni2DE60487;
+    sub \uni2DE0 \uni0487  by \uni2DE00487;
+    sub \uni2DE7 \uni0487  by \uni2DE70487;
+    sub \uni2DFD \uni0487  by \uni2DFD0487;
+    sub \uni2DEB \uni0487  by \uni2DEB0487;
+    sub \uni2DF2 \uni0487  by \uni2DF20487;
+    sub \uni2DF0 \uni0487  by \uni2DF00487;
+    sub \uni2DEE \uni0487  by \uni2DEE0487;
+    sub \uni04630486 \acutecomb  by \uniE907;
+} ccmpSecondRoundofPrecomposedGlyphs;
+
+lookup saltStylisticAlternativesinCyrillic {
+  lookupflag 0;
+    sub \uni0483 from [\uni0483.tiny \uni0483.short \uni0483.long ];
+    sub \afii10194 from [\uni0463.short ];
+    sub \uni0460 from [\uni0460.alt ];
+    sub \u1F545 from [\uniE5D0 \uniE5D1 \uniE5D2 \uniE5D3 \uniE5D4 \uniE5D5 \uniE5D6 \uniE5D7 ];
+} saltStylisticAlternativesinCyrillic;
+
+lookup ss01ChurchSlavonicHyphenation {
+  lookupflag 0;
+    sub \hyphen by \underscore ;
+} ss01ChurchSlavonicHyphenation;
+
+lookup ContextualTitloReplacement {
+  lookupflag 0;
+    @cc4_match_1 = [\uni0483 ];
+    @cc4_match_2 = [\afii10055 \afii10068 \afii10070 \afii10082 \afii10083 \afii10103 ];
+    @cc4_match_3 = [\afii10020 \afii10022 \afii10029 \afii10074 \afii10076 \afii10077 \afii10079 
+	\afii10085 \afii10087 \afii10089 ];
+    @cc4_match_4 = [\afii10024 \afii10025 \afii10030 \afii10036 \afii10038 \afii10042 \afii10043 
+	\afii10045 \afii10048 \afii10072 \afii10073 \afii10078 \afii10084 
+	\afii10086 \afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B 
+	\uni047E \uni047F \uniA656 ];
+    @cc4_back_1 = [\uni0483 ];
+    @cc4_back_2 = [\afii10055 \afii10068 \afii10070 \afii10082 \afii10083 \afii10103 ];
+    @cc4_back_3 = [\afii10020 \afii10022 \afii10029 \afii10074 \afii10076 \afii10077 \afii10079 
+	\afii10085 \afii10087 \afii10089 ];
+    @cc4_back_4 = [\afii10024 \afii10025 \afii10030 \afii10036 \afii10038 \afii10042 \afii10043 
+	\afii10045 \afii10048 \afii10072 \afii10073 \afii10078 \afii10084 
+	\afii10086 \afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B 
+	\uni047E \uni047F \uniA656 ];
+    @cc4_ahead_1 = [\uni0483 ];
+    @cc4_ahead_2 = [\afii10055 \afii10068 \afii10070 \afii10082 \afii10083 \afii10103 ];
+    @cc4_ahead_3 = [\afii10020 \afii10022 \afii10029 \afii10074 \afii10076 \afii10077 \afii10079 
+	\afii10085 \afii10087 \afii10089 ];
+    @cc4_ahead_4 = [\afii10024 \afii10025 \afii10030 \afii10036 \afii10038 \afii10042 \afii10043 
+	\afii10045 \afii10048 \afii10072 \afii10073 \afii10078 \afii10084 
+	\afii10086 \afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B 
+	\uni047E \uni047F \uniA656 ];
+    sub @cc4_match_2' @cc4_match_1'  by [\uni0483.tiny ] ;
+    sub @cc4_match_3' @cc4_match_1'  by [\uni0483.short ] ;
+    sub @cc4_match_4' @cc4_match_1'  by [\uni0483.long ] ;
+} ContextualTitloReplacement;
+
+feature ccmp {
+
+ script DFLT;
+     language dflt ;
+      lookup ccmpCanonicalCompositionandPrecomposedGlyphs;
+      lookup ccmpSecondRoundofPrecomposedGlyphs;
+      lookup ContextualTitloReplacement;
+
+ script cyrl;
+     language dflt ;
+      lookup ccmpCanonicalCompositionandPrecomposedGlyphs;
+      lookup ccmpSecondRoundofPrecomposedGlyphs;
+      lookup ContextualTitloReplacement;
+
+ script latn;
+     language dflt ;
+      lookup ccmpCanonicalCompositionandPrecomposedGlyphs;
+      lookup ccmpSecondRoundofPrecomposedGlyphs;
+} ccmp;
+
+feature salt {
+
+ script DFLT;
+     language dflt ;
+      lookup saltStylisticAlternativesinCyrillic;
+
+ script cyrl;
+     language dflt ;
+      lookup saltStylisticAlternativesinCyrillic;
+
+ script latn;
+     language dflt ;
+      lookup saltStylisticAlternativesinCyrillic;
+} salt;
+
+feature ss01 {
+
+ script DFLT;
+     language dflt ;
+      lookup ss01ChurchSlavonicHyphenation;
+
+ script cyrl;
+     language dflt ;
+      lookup ss01ChurchSlavonicHyphenation;
+
+ script latn;
+     language dflt ;
+      lookup ss01ChurchSlavonicHyphenation;
+} ss01;
+
+# GPOS 
+
+
+lookup kernHorizontalKerning {
+  lookupflag IgnoreMarks;
+    @kc8_first_1 = [\uni0400 \afii10023 \afii10053 \afii10022 \uni0464 ];
+    @kc8_first_2 = [\afii10054 ];
+    @kc8_first_3 = [\afii10055 \uni040D \afii10017 \afii10026 \afii10027 \afii10029 \afii10030 
+	\afii10031 \afii10033 \afii10041 \afii10042 \afii10043 \afii10045 
+	\uniA656 \afii10056 ];
+    @kc8_first_4 = [\afii10061 \afii10028 ];
+    @kc8_first_5 = [\afii10062 \afii10037 ];
+    @kc8_first_6 = [\afii10018 ];
+    @kc8_first_7 = [\afii10019 ];
+    @kc8_first_8 = [\afii10021 ];
+    @kc8_first_9 = [\afii10024 ];
+    @kc8_first_10 = [\afii10025 ];
+    @kc8_first_11 = [\afii10032 \afii10048 \uni047B \uni047D \uniA64D ];
+    @kc8_first_12 = [\afii10034 ];
+    @kc8_first_13 = [\afii10035 ];
+    @kc8_first_14 = [\afii10052 \afii10020 \afii10036 ];
+    @kc8_first_15 = [\afii10038 \uni047A \uni047C \uniA64C ];
+    @kc8_first_16 = [\afii10039 ];
+    @kc8_first_17 = [\afii10040 ];
+    @kc8_first_18 = [\afii10044 ];
+    @kc8_first_19 = [\afii10046 ];
+    @kc8_first_20 = [\afii10047 ];
+    @kc8_first_21 = [\afii10065 \afii10077 ];
+    @kc8_first_22 = [\afii10066 \afii10092 \afii10194 \uni0463.short \uniE904 \uniE903 \uniE907 
+	\uniE901 \uni04630486 ];
+    @kc8_first_23 = [\afii10067 ];
+    @kc8_first_24 = [\afii10068 \afii10084 \afii10100 \afii10196 ];
+    @kc8_first_25 = [\afii10069 \uni1C81 ];
+    @kc8_first_26 = [\afii10070 \uni0450 \uni0465 \afii10071 ];
+    @kc8_first_27 = [\afii10072 \afii10076 \afii10109 ];
+    @kc8_first_28 = [\afii10073 ];
+    @kc8_first_29 = [\afii10074 \afii10075 \afii10079 \afii10081 \afii10089 \afii10090 \afii10103 
+	\uni045D \uni1C85 ];
+    @kc8_first_30 = [\afii10078 \uniA657 ];
+    @kc8_first_31 = [\afii10080 ];
+    @kc8_first_32 = [\afii10082 \afii10096 ];
+    @kc8_first_33 = [\afii10083 ];
+    @kc8_first_34 = [\afii10085 \afii10110 \uni0478 \uni0479 \uni0477 ];
+    @kc8_first_35 = [\afii10086 ];
+    @kc8_first_36 = [\afii10087 ];
+    @kc8_first_37 = [\afii10088 ];
+    @kc8_first_38 = [\afii10091 \afii10093 ];
+    @kc8_first_39 = [\afii10094 \uni0467 \uni0469 \uni046B \uni046D ];
+    @kc8_first_40 = [\afii10101 ];
+    @kc8_first_41 = [\afii10102 ];
+    @kc8_first_42 = [\afii10104 \afii10105 \uniE926 ];
+    @kc8_first_43 = [\uni0461 \uni0460 \uni047E \uni047F \uni0460.alt ];
+    @kc8_first_44 = [\afii10146 ];
+    @kc8_first_45 = [\uni0466 \uni0468 \uni046C \uni046A ];
+    @kc8_first_46 = [\uni046E \uni046F ];
+    @kc8_first_47 = [\uni0470 \uni0471 ];
+    @kc8_first_48 = [\afii10147 ];
+    @kc8_first_49 = [\afii10195 ];
+    @kc8_first_50 = [\afii10148 \uni0476 ];
+    @kc8_first_51 = [\uni1C82 ];
+    @kc8_first_52 = [\uniA64A ];
+    @kc8_first_53 = [\uniA64B \uniE8E1 \uniE8E3 \uniE8E5 ];
+    @kc8_first_54 = [\uniE925 ];
+    @kc8_second_1 = [\uni0400 \afii10023 \afii10053 \afii10022 ];
+    @kc8_second_2 = [\afii10052 \afii10055 \afii10061 \uni040D \afii10018 \afii10020 \afii10026 
+	\afii10027 \afii10028 \afii10031 \afii10033 \afii10040 \afii10042 
+	\afii10043 \afii10045 \afii10046 \afii10048 \uni0464 \uniA656 ];
+    @kc8_second_3 = [\afii10054 ];
+    @kc8_second_4 = [\afii10056 ];
+    @kc8_second_5 = [\afii10057 ];
+    @kc8_second_6 = [\afii10062 \afii10037 ];
+    @kc8_second_7 = [\afii10017 ];
+    @kc8_second_8 = [\afii10019 \afii10034 ];
+    @kc8_second_9 = [\afii10021 ];
+    @kc8_second_10 = [\afii10024 ];
+    @kc8_second_11 = [\afii10025 ];
+    @kc8_second_12 = [\afii10029 \afii10030 \uni0466 ];
+    @kc8_second_13 = [\afii10032 \afii10035 \uni0478 ];
+    @kc8_second_14 = [\afii10036 ];
+    @kc8_second_15 = [\afii10038 \uni047A ];
+    @kc8_second_16 = [\afii10039 ];
+    @kc8_second_17 = [\afii10041 ];
+    @kc8_second_18 = [\afii10044 ];
+    @kc8_second_19 = [\afii10047 ];
+    @kc8_second_20 = [\afii10065 ];
+    @kc8_second_21 = [\afii10066 \afii10070 \afii10074 \afii10075 \afii10076 \afii10079 \afii10083 
+	\afii10091 \afii10093 \afii10094 \afii10103 \afii10109 \uni045D ];
+    @kc8_second_22 = [\afii10067 \afii10068 \afii10081 \afii10088 \afii10090 \afii10096 \afii10100 
+	\uni0465 \uni0469 \uni046D \uni1C85 ];
+    @kc8_second_23 = [\afii10069 \uni1C81 ];
+    @kc8_second_24 = [\afii10072 ];
+    @kc8_second_25 = [\afii10073 ];
+    @kc8_second_26 = [\afii10078 \uni0467 \afii10077 \uni046B ];
+    @kc8_second_27 = [\afii10080 \uni047D \uniA64D ];
+    @kc8_second_28 = [\afii10082 ];
+    @kc8_second_29 = [\afii10084 ];
+    @kc8_second_30 = [\afii10085 \afii10110 ];
+    @kc8_second_31 = [\afii10086 ];
+    @kc8_second_32 = [\afii10087 ];
+    @kc8_second_33 = [\afii10089 ];
+    @kc8_second_34 = [\afii10092 ];
+    @kc8_second_35 = [\afii10095 ];
+    @kc8_second_36 = [\uni0450 ];
+    @kc8_second_37 = [\afii10071 ];
+    @kc8_second_38 = [\afii10101 \uni1C83 ];
+    @kc8_second_39 = [\afii10102 ];
+    @kc8_second_40 = [\afii10104 \afii10105 ];
+    @kc8_second_41 = [\uni0460 ];
+    @kc8_second_42 = [\uni0461 ];
+    @kc8_second_43 = [\afii10146 ];
+    @kc8_second_44 = [\afii10194 \uni0463.short \uniE901 \uniE903 \uniE904 \uniE907 \uni04630486 ];
+    @kc8_second_45 = [\uni0468 \uni046C ];
+    @kc8_second_46 = [\uni046A ];
+    @kc8_second_47 = [\uni046E ];
+    @kc8_second_48 = [\uni046F ];
+    @kc8_second_49 = [\uni0470 ];
+    @kc8_second_50 = [\uni0471 ];
+    @kc8_second_51 = [\afii10147 ];
+    @kc8_second_52 = [\afii10195 ];
+    @kc8_second_53 = [\afii10148 \uni0476 ];
+    @kc8_second_54 = [\afii10196 \uni0477 ];
+    @kc8_second_55 = [\uni0479 \uni1C82 ];
+    @kc8_second_56 = [\uni047B ];
+    @kc8_second_57 = [\uni047C \uniA64C ];
+    @kc8_second_58 = [\uni047E \uni047F \uni0460.alt \uni047E0301 \uni047F0301 ];
+    @kc8_second_59 = [\uniA64A ];
+    @kc8_second_60 = [\uniA64B \uniE8E1 \uniE8E3 \uniE8E5 ];
+    @kc8_second_61 = [\uniA657 ];
+    @kc8_second_62 = [\uniE925 \uniE926 ];
+    pos @kc8_first_1 @kc8_second_2 -12;
+    pos @kc8_first_1 @kc8_second_3 -42;
+    pos @kc8_first_1 @kc8_second_4 -14;
+    pos @kc8_first_1 @kc8_second_5 -56;
+    pos @kc8_first_1 @kc8_second_6 -35;
+    pos @kc8_first_1 @kc8_second_8 -9;
+    pos @kc8_first_1 @kc8_second_9 -103;
+    pos @kc8_first_1 @kc8_second_10 -50;
+    pos @kc8_first_1 @kc8_second_11 -51;
+    pos @kc8_first_1 @kc8_second_12 -42;
+    pos @kc8_first_1 @kc8_second_14 -55;
+    pos @kc8_first_1 @kc8_second_16 -85;
+    pos @kc8_first_1 @kc8_second_17 -24;
+    pos @kc8_first_1 @kc8_second_18 -15;
+    pos @kc8_first_1 @kc8_second_20 -29;
+    pos @kc8_first_1 @kc8_second_23 -121;
+    pos @kc8_first_1 @kc8_second_25 -41;
+    pos @kc8_first_1 @kc8_second_26 -36;
+    pos @kc8_first_1 @kc8_second_31 -11;
+    pos @kc8_first_1 @kc8_second_32 -41;
+    pos @kc8_first_1 @kc8_second_33 -20;
+    pos @kc8_first_1 @kc8_second_34 -14;
+    pos @kc8_first_1 @kc8_second_35 -41;
+    pos @kc8_first_1 @kc8_second_39 -5;
+    pos @kc8_first_1 @kc8_second_45 -12;
+    pos @kc8_first_1 @kc8_second_46 -57;
+    pos @kc8_first_1 @kc8_second_47 -74;
+    pos @kc8_first_1 @kc8_second_48 -41;
+    pos @kc8_first_1 @kc8_second_49 -36;
+    pos @kc8_first_1 @kc8_second_50 -33;
+    pos @kc8_first_1 @kc8_second_51 -61;
+    pos @kc8_first_1 @kc8_second_52 -233;
+    pos @kc8_first_1 @kc8_second_53 -24;
+    pos @kc8_first_1 @kc8_second_54 -10;
+    pos @kc8_first_1 @kc8_second_59 -35;
+    pos @kc8_first_1 @kc8_second_61 -1;
+    pos @kc8_first_1 @kc8_second_62 -31;
+    pos @kc8_first_2 @kc8_second_1 -19;
+    pos @kc8_first_2 @kc8_second_2 -7;
+    pos @kc8_first_2 @kc8_second_4 -20;
+    pos @kc8_first_2 @kc8_second_6 -25;
+    pos @kc8_first_2 @kc8_second_8 -1;
+    pos @kc8_first_2 @kc8_second_9 -24;
+    pos @kc8_first_2 @kc8_second_11 -1;
+    pos @kc8_first_2 @kc8_second_13 -9;
+    pos @kc8_first_2 @kc8_second_14 -25;
+    pos @kc8_first_2 @kc8_second_16 -25;
+    pos @kc8_first_2 @kc8_second_17 -10;
+    pos @kc8_first_2 @kc8_second_18 -10;
+    pos @kc8_first_2 @kc8_second_23 -25;
+    pos @kc8_first_2 @kc8_second_25 -10;
+    pos @kc8_first_2 @kc8_second_29 -4;
+    pos @kc8_first_2 @kc8_second_32 -25;
+    pos @kc8_first_2 @kc8_second_33 -25;
+    pos @kc8_first_2 @kc8_second_34 -23;
+    pos @kc8_first_2 @kc8_second_39 -23;
+    pos @kc8_first_2 @kc8_second_40 -2;
+    pos @kc8_first_2 @kc8_second_43 -25;
+    pos @kc8_first_2 @kc8_second_45 -5;
+    pos @kc8_first_2 @kc8_second_48 -5;
+    pos @kc8_first_2 @kc8_second_49 -50;
+    pos @kc8_first_2 @kc8_second_50 -25;
+    pos @kc8_first_2 @kc8_second_52 -15;
+    pos @kc8_first_2 @kc8_second_53 -30;
+    pos @kc8_first_2 @kc8_second_54 -30;
+    pos @kc8_first_2 @kc8_second_59 -20;
+    pos @kc8_first_2 @kc8_second_60 -30;
+    pos @kc8_first_2 @kc8_second_62 -10;
+    pos @kc8_first_3 @kc8_second_5 -1;
+    pos @kc8_first_3 @kc8_second_19 -16;
+    pos @kc8_first_3 @kc8_second_25 -20;
+    pos @kc8_first_3 @kc8_second_32 -15;
+    pos @kc8_first_3 @kc8_second_33 -8;
+    pos @kc8_first_3 @kc8_second_35 -17;
+    pos @kc8_first_3 @kc8_second_43 -20;
+    pos @kc8_first_3 @kc8_second_47 -20;
+    pos @kc8_first_3 @kc8_second_48 -10;
+    pos @kc8_first_3 @kc8_second_50 -10;
+    pos @kc8_first_3 @kc8_second_54 -2;
+    pos @kc8_first_3 @kc8_second_62 -10;
+    pos @kc8_first_4 @kc8_second_1 -11;
+    pos @kc8_first_4 @kc8_second_13 -10;
+    pos @kc8_first_4 @kc8_second_15 -9;
+    pos @kc8_first_4 @kc8_second_19 -31;
+    pos @kc8_first_4 @kc8_second_25 -10;
+    pos @kc8_first_4 @kc8_second_29 -10;
+    pos @kc8_first_4 @kc8_second_32 -10;
+    pos @kc8_first_4 @kc8_second_33 -10;
+    pos @kc8_first_4 @kc8_second_35 -15;
+    pos @kc8_first_4 @kc8_second_43 -25;
+    pos @kc8_first_4 @kc8_second_44 -10;
+    pos @kc8_first_4 @kc8_second_47 -15;
+    pos @kc8_first_4 @kc8_second_48 -19;
+    pos @kc8_first_4 @kc8_second_50 -5;
+    pos @kc8_first_4 @kc8_second_54 -15;
+    pos @kc8_first_4 @kc8_second_58 -2;
+    pos @kc8_first_4 @kc8_second_59 -6;
+    pos @kc8_first_4 @kc8_second_60 -15;
+    pos @kc8_first_5 @kc8_second_3 -46;
+    pos @kc8_first_5 @kc8_second_5 -1;
+    pos @kc8_first_5 @kc8_second_7 -25;
+    pos @kc8_first_5 @kc8_second_8 -36;
+    pos @kc8_first_5 @kc8_second_9 -75;
+    pos @kc8_first_5 @kc8_second_10 -10;
+    pos @kc8_first_5 @kc8_second_11 -15;
+    pos @kc8_first_5 @kc8_second_12 -55;
+    pos @kc8_first_5 @kc8_second_13 -10;
+    pos @kc8_first_5 @kc8_second_15 -25;
+    pos @kc8_first_5 @kc8_second_20 -35;
+    pos @kc8_first_5 @kc8_second_21 -25;
+    pos @kc8_first_5 @kc8_second_22 -10;
+    pos @kc8_first_5 @kc8_second_23 -25;
+    pos @kc8_first_5 @kc8_second_24 -25;
+    pos @kc8_first_5 @kc8_second_25 -35;
+    pos @kc8_first_5 @kc8_second_26 -25;
+    pos @kc8_first_5 @kc8_second_27 -15;
+    pos @kc8_first_5 @kc8_second_28 -25;
+    pos @kc8_first_5 @kc8_second_29 -15;
+    pos @kc8_first_5 @kc8_second_31 -35;
+    pos @kc8_first_5 @kc8_second_32 -15;
+    pos @kc8_first_5 @kc8_second_33 -10;
+    pos @kc8_first_5 @kc8_second_34 -10;
+    pos @kc8_first_5 @kc8_second_36 -25;
+    pos @kc8_first_5 @kc8_second_38 -111;
+    pos @kc8_first_5 @kc8_second_39 -35;
+    pos @kc8_first_5 @kc8_second_42 -25;
+    pos @kc8_first_5 @kc8_second_43 -10;
+    pos @kc8_first_5 @kc8_second_44 -15;
+    pos @kc8_first_5 @kc8_second_46 -25;
+    pos @kc8_first_5 @kc8_second_47 -60;
+    pos @kc8_first_5 @kc8_second_48 -55;
+    pos @kc8_first_5 @kc8_second_50 -45;
+    pos @kc8_first_5 @kc8_second_51 -10;
+    pos @kc8_first_5 @kc8_second_52 -35;
+    pos @kc8_first_5 @kc8_second_54 -35;
+    pos @kc8_first_5 @kc8_second_55 -10;
+    pos @kc8_first_5 @kc8_second_56 -20;
+    pos @kc8_first_5 @kc8_second_57 -10;
+    pos @kc8_first_5 @kc8_second_58 -15;
+    pos @kc8_first_5 @kc8_second_61 -15;
+    pos @kc8_first_6 @kc8_second_6 -20;
+    pos @kc8_first_6 @kc8_second_14 -20;
+    pos @kc8_first_6 @kc8_second_17 -7;
+    pos @kc8_first_6 @kc8_second_49 -18;
+    pos @kc8_first_6 @kc8_second_50 -7;
+    pos @kc8_first_6 @kc8_second_59 -21;
+    pos @kc8_first_6 @kc8_second_60 -5;
+    pos @kc8_first_7 @kc8_second_1 -8;
+    pos @kc8_first_7 @kc8_second_2 -10;
+    pos @kc8_first_7 @kc8_second_6 -25;
+    pos @kc8_first_7 @kc8_second_13 -10;
+    pos @kc8_first_7 @kc8_second_14 -20;
+    pos @kc8_first_7 @kc8_second_15 -10;
+    pos @kc8_first_7 @kc8_second_16 -10;
+    pos @kc8_first_7 @kc8_second_17 -10;
+    pos @kc8_first_7 @kc8_second_18 -10;
+    pos @kc8_first_7 @kc8_second_19 -29;
+    pos @kc8_first_7 @kc8_second_25 -15;
+    pos @kc8_first_7 @kc8_second_29 -20;
+    pos @kc8_first_7 @kc8_second_30 -11;
+    pos @kc8_first_7 @kc8_second_32 -15;
+    pos @kc8_first_7 @kc8_second_33 -20;
+    pos @kc8_first_7 @kc8_second_35 -14;
+    pos @kc8_first_7 @kc8_second_42 -10;
+    pos @kc8_first_7 @kc8_second_43 -25;
+    pos @kc8_first_7 @kc8_second_44 -25;
+    pos @kc8_first_7 @kc8_second_47 -16;
+    pos @kc8_first_7 @kc8_second_48 -20;
+    pos @kc8_first_7 @kc8_second_49 -31;
+    pos @kc8_first_7 @kc8_second_50 -25;
+    pos @kc8_first_7 @kc8_second_53 -25;
+    pos @kc8_first_7 @kc8_second_54 -25;
+    pos @kc8_first_7 @kc8_second_57 -3;
+    pos @kc8_first_7 @kc8_second_58 -11;
+    pos @kc8_first_7 @kc8_second_59 -20;
+    pos @kc8_first_7 @kc8_second_62 -25;
+    pos @kc8_first_8 @kc8_second_5 -10;
+    pos @kc8_first_8 @kc8_second_6 -1;
+    pos @kc8_first_8 @kc8_second_19 -25;
+    pos @kc8_first_8 @kc8_second_25 -10;
+    pos @kc8_first_8 @kc8_second_28 -2;
+    pos @kc8_first_8 @kc8_second_29 -4;
+    pos @kc8_first_8 @kc8_second_31 -6;
+    pos @kc8_first_8 @kc8_second_32 -15;
+    pos @kc8_first_8 @kc8_second_33 -17;
+    pos @kc8_first_8 @kc8_second_35 -36;
+    pos @kc8_first_8 @kc8_second_43 -10;
+    pos @kc8_first_8 @kc8_second_47 -7;
+    pos @kc8_first_8 @kc8_second_50 -10;
+    pos @kc8_first_8 @kc8_second_54 -10;
+    pos @kc8_first_8 @kc8_second_59 -3;
+    pos @kc8_first_8 @kc8_second_60 -3;
+    pos @kc8_first_9 @kc8_second_1 -15;
+    pos @kc8_first_9 @kc8_second_6 -25;
+    pos @kc8_first_9 @kc8_second_13 -20;
+    pos @kc8_first_9 @kc8_second_14 -22;
+    pos @kc8_first_9 @kc8_second_15 -25;
+    pos @kc8_first_9 @kc8_second_17 -15;
+    pos @kc8_first_9 @kc8_second_19 -58;
+    pos @kc8_first_9 @kc8_second_25 -25;
+    pos @kc8_first_9 @kc8_second_29 -25;
+    pos @kc8_first_9 @kc8_second_32 -25;
+    pos @kc8_first_9 @kc8_second_33 -55;
+    pos @kc8_first_9 @kc8_second_41 -10;
+    pos @kc8_first_9 @kc8_second_42 -15;
+    pos @kc8_first_9 @kc8_second_43 -25;
+    pos @kc8_first_9 @kc8_second_44 -50;
+    pos @kc8_first_9 @kc8_second_47 -11;
+    pos @kc8_first_9 @kc8_second_48 -17;
+    pos @kc8_first_9 @kc8_second_49 -37;
+    pos @kc8_first_9 @kc8_second_50 -45;
+    pos @kc8_first_9 @kc8_second_53 -24;
+    pos @kc8_first_9 @kc8_second_54 -45;
+    pos @kc8_first_9 @kc8_second_56 -7;
+    pos @kc8_first_9 @kc8_second_57 -13;
+    pos @kc8_first_9 @kc8_second_58 -23;
+    pos @kc8_first_9 @kc8_second_59 -46;
+    pos @kc8_first_9 @kc8_second_60 -20;
+    pos @kc8_first_9 @kc8_second_62 -5;
+    pos @kc8_first_10 @kc8_second_6 -35;
+    pos @kc8_first_10 @kc8_second_9 -10;
+    pos @kc8_first_10 @kc8_second_11 -3;
+    pos @kc8_first_10 @kc8_second_14 -25;
+    pos @kc8_first_10 @kc8_second_16 -10;
+    pos @kc8_first_10 @kc8_second_17 -10;
+    pos @kc8_first_10 @kc8_second_18 -8;
+    pos @kc8_first_10 @kc8_second_23 -25;
+    pos @kc8_first_10 @kc8_second_25 -10;
+    pos @kc8_first_10 @kc8_second_32 -20;
+    pos @kc8_first_10 @kc8_second_33 -19;
+    pos @kc8_first_10 @kc8_second_34 -7;
+    pos @kc8_first_10 @kc8_second_39 -10;
+    pos @kc8_first_10 @kc8_second_48 -1;
+    pos @kc8_first_10 @kc8_second_49 -42;
+    pos @kc8_first_10 @kc8_second_50 -10;
+    pos @kc8_first_10 @kc8_second_52 -25;
+    pos @kc8_first_10 @kc8_second_53 -14;
+    pos @kc8_first_10 @kc8_second_59 -25;
+    pos @kc8_first_10 @kc8_second_60 -1;
+    pos @kc8_first_10 @kc8_second_62 -7;
+    pos @kc8_first_11 @kc8_second_3 -10;
+    pos @kc8_first_11 @kc8_second_6 -30;
+    pos @kc8_first_11 @kc8_second_9 -12;
+    pos @kc8_first_11 @kc8_second_10 -5;
+    pos @kc8_first_11 @kc8_second_11 -15;
+    pos @kc8_first_11 @kc8_second_14 -25;
+    pos @kc8_first_11 @kc8_second_16 -20;
+    pos @kc8_first_11 @kc8_second_17 -5;
+    pos @kc8_first_11 @kc8_second_23 -45;
+    pos @kc8_first_11 @kc8_second_47 -5;
+    pos @kc8_first_11 @kc8_second_49 -25;
+    pos @kc8_first_11 @kc8_second_52 -25;
+    pos @kc8_first_11 @kc8_second_53 -3;
+    pos @kc8_first_11 @kc8_second_59 -30;
+    pos @kc8_first_11 @kc8_second_60 -10;
+    pos @kc8_first_12 @kc8_second_3 -13;
+    pos @kc8_first_12 @kc8_second_5 -77;
+    pos @kc8_first_12 @kc8_second_9 -100;
+    pos @kc8_first_12 @kc8_second_10 -25;
+    pos @kc8_first_12 @kc8_second_11 -5;
+    pos @kc8_first_12 @kc8_second_12 -85;
+    pos @kc8_first_12 @kc8_second_20 -35;
+    pos @kc8_first_12 @kc8_second_23 -55;
+    pos @kc8_first_12 @kc8_second_25 -35;
+    pos @kc8_first_12 @kc8_second_26 -25;
+    pos @kc8_first_12 @kc8_second_27 -55;
+    pos @kc8_first_12 @kc8_second_28 -25;
+    pos @kc8_first_12 @kc8_second_31 -25;
+    pos @kc8_first_12 @kc8_second_35 -46;
+    pos @kc8_first_12 @kc8_second_36 -34;
+    pos @kc8_first_12 @kc8_second_38 -25;
+    pos @kc8_first_12 @kc8_second_39 -35;
+    pos @kc8_first_12 @kc8_second_46 -25;
+    pos @kc8_first_12 @kc8_second_48 -25;
+    pos @kc8_first_12 @kc8_second_51 -25;
+    pos @kc8_first_12 @kc8_second_52 -155;
+    pos @kc8_first_12 @kc8_second_55 -9;
+    pos @kc8_first_12 @kc8_second_56 -15;
+    pos @kc8_first_12 @kc8_second_61 -15;
+    pos @kc8_first_13 @kc8_second_3 -31;
+    pos @kc8_first_13 @kc8_second_4 -10;
+    pos @kc8_first_13 @kc8_second_5 -5;
+    pos @kc8_first_13 @kc8_second_6 -20;
+    pos @kc8_first_13 @kc8_second_9 -40;
+    pos @kc8_first_13 @kc8_second_10 -30;
+    pos @kc8_first_13 @kc8_second_11 -25;
+    pos @kc8_first_13 @kc8_second_14 -40;
+    pos @kc8_first_13 @kc8_second_16 -40;
+    pos @kc8_first_13 @kc8_second_17 -36;
+    pos @kc8_first_13 @kc8_second_18 -20;
+    pos @kc8_first_13 @kc8_second_20 -2;
+    pos @kc8_first_13 @kc8_second_23 -40;
+    pos @kc8_first_13 @kc8_second_25 -19;
+    pos @kc8_first_13 @kc8_second_26 -12;
+    pos @kc8_first_13 @kc8_second_35 -48;
+    pos @kc8_first_13 @kc8_second_45 -3;
+    pos @kc8_first_13 @kc8_second_46 -26;
+    pos @kc8_first_13 @kc8_second_48 -41;
+    pos @kc8_first_13 @kc8_second_49 -25;
+    pos @kc8_first_13 @kc8_second_52 -21;
+    pos @kc8_first_13 @kc8_second_53 -18;
+    pos @kc8_first_13 @kc8_second_59 -40;
+    pos @kc8_first_13 @kc8_second_60 -10;
+    pos @kc8_first_13 @kc8_second_62 -18;
+    pos @kc8_first_14 @kc8_second_1 -36;
+    pos @kc8_first_14 @kc8_second_3 -25;
+    pos @kc8_first_14 @kc8_second_5 -19;
+    pos @kc8_first_14 @kc8_second_7 -45;
+    pos @kc8_first_14 @kc8_second_8 -30;
+    pos @kc8_first_14 @kc8_second_9 -75;
+    pos @kc8_first_14 @kc8_second_10 -21;
+    pos @kc8_first_14 @kc8_second_11 -10;
+    pos @kc8_first_14 @kc8_second_12 -75;
+    pos @kc8_first_14 @kc8_second_13 -25;
+    pos @kc8_first_14 @kc8_second_15 -25;
+    pos @kc8_first_14 @kc8_second_19 -54;
+    pos @kc8_first_14 @kc8_second_20 -75;
+    pos @kc8_first_14 @kc8_second_21 -45;
+    pos @kc8_first_14 @kc8_second_22 -25;
+    pos @kc8_first_14 @kc8_second_23 -100;
+    pos @kc8_first_14 @kc8_second_24 -25;
+    pos @kc8_first_14 @kc8_second_25 -25;
+    pos @kc8_first_14 @kc8_second_26 -100;
+    pos @kc8_first_14 @kc8_second_27 -55;
+    pos @kc8_first_14 @kc8_second_28 -55;
+    pos @kc8_first_14 @kc8_second_29 -25;
+    pos @kc8_first_14 @kc8_second_30 -25;
+    pos @kc8_first_14 @kc8_second_31 -75;
+    pos @kc8_first_14 @kc8_second_32 -35;
+    pos @kc8_first_14 @kc8_second_33 -25;
+    pos @kc8_first_14 @kc8_second_34 -25;
+    pos @kc8_first_14 @kc8_second_35 -25;
+    pos @kc8_first_14 @kc8_second_36 -14;
+    pos @kc8_first_14 @kc8_second_38 -45;
+    pos @kc8_first_14 @kc8_second_39 -45;
+    pos @kc8_first_14 @kc8_second_41 -4;
+    pos @kc8_first_14 @kc8_second_42 -25;
+    pos @kc8_first_14 @kc8_second_43 -25;
+    pos @kc8_first_14 @kc8_second_44 -13;
+    pos @kc8_first_14 @kc8_second_46 -15;
+    pos @kc8_first_14 @kc8_second_47 -10;
+    pos @kc8_first_14 @kc8_second_48 -12;
+    pos @kc8_first_14 @kc8_second_50 -13;
+    pos @kc8_first_14 @kc8_second_51 -45;
+    pos @kc8_first_14 @kc8_second_52 -95;
+    pos @kc8_first_14 @kc8_second_54 -25;
+    pos @kc8_first_14 @kc8_second_55 -14;
+    pos @kc8_first_14 @kc8_second_56 -16;
+    pos @kc8_first_14 @kc8_second_57 -45;
+    pos @kc8_first_14 @kc8_second_58 -25;
+    pos @kc8_first_14 @kc8_second_61 -45;
+    pos @kc8_first_15 @kc8_second_3 -43;
+    pos @kc8_first_15 @kc8_second_5 -20;
+    pos @kc8_first_15 @kc8_second_6 -23;
+    pos @kc8_first_15 @kc8_second_9 -65;
+    pos @kc8_first_15 @kc8_second_10 -38;
+    pos @kc8_first_15 @kc8_second_11 -69;
+    pos @kc8_first_15 @kc8_second_12 -7;
+    pos @kc8_first_15 @kc8_second_14 -79;
+    pos @kc8_first_15 @kc8_second_16 -85;
+    pos @kc8_first_15 @kc8_second_18 -31;
+    pos @kc8_first_15 @kc8_second_20 -13;
+    pos @kc8_first_15 @kc8_second_23 -87;
+    pos @kc8_first_15 @kc8_second_26 -24;
+    pos @kc8_first_15 @kc8_second_46 -27;
+    pos @kc8_first_15 @kc8_second_49 -28;
+    pos @kc8_first_15 @kc8_second_52 -210;
+    pos @kc8_first_15 @kc8_second_53 -2;
+    pos @kc8_first_15 @kc8_second_59 -23;
+    pos @kc8_first_15 @kc8_second_60 -14;
+    pos @kc8_first_16 @kc8_second_1 -3;
+    pos @kc8_first_16 @kc8_second_5 -2;
+    pos @kc8_first_16 @kc8_second_6 -4;
+    pos @kc8_first_16 @kc8_second_13 -31;
+    pos @kc8_first_16 @kc8_second_15 -55;
+    pos @kc8_first_16 @kc8_second_19 -9;
+    pos @kc8_first_16 @kc8_second_25 -152;
+    pos @kc8_first_16 @kc8_second_27 -19;
+    pos @kc8_first_16 @kc8_second_29 -101;
+    pos @kc8_first_16 @kc8_second_30 -17;
+    pos @kc8_first_16 @kc8_second_32 -48;
+    pos @kc8_first_16 @kc8_second_33 -113;
+    pos @kc8_first_16 @kc8_second_35 -12;
+    pos @kc8_first_16 @kc8_second_42 -35;
+    pos @kc8_first_16 @kc8_second_43 -48;
+    pos @kc8_first_16 @kc8_second_44 -83;
+    pos @kc8_first_16 @kc8_second_47 -9;
+    pos @kc8_first_16 @kc8_second_48 -15;
+    pos @kc8_first_16 @kc8_second_50 -85;
+    pos @kc8_first_16 @kc8_second_54 -65;
+    pos @kc8_first_16 @kc8_second_55 -11;
+    pos @kc8_first_16 @kc8_second_56 -43;
+    pos @kc8_first_16 @kc8_second_57 -28;
+    pos @kc8_first_16 @kc8_second_58 -29;
+    pos @kc8_first_16 @kc8_second_59 -3;
+    pos @kc8_first_17 @kc8_second_5 -8;
+    pos @kc8_first_17 @kc8_second_19 -23;
+    pos @kc8_first_17 @kc8_second_29 -1;
+    pos @kc8_first_17 @kc8_second_31 -10;
+    pos @kc8_first_17 @kc8_second_33 -14;
+    pos @kc8_first_17 @kc8_second_35 -39;
+    pos @kc8_first_17 @kc8_second_43 -27;
+    pos @kc8_first_17 @kc8_second_50 -39;
+    pos @kc8_first_17 @kc8_second_54 -8;
+    pos @kc8_first_18 @kc8_second_1 -41;
+    pos @kc8_first_18 @kc8_second_6 -106;
+    pos @kc8_first_18 @kc8_second_13 -64;
+    pos @kc8_first_18 @kc8_second_14 -97;
+    pos @kc8_first_18 @kc8_second_15 -53;
+    pos @kc8_first_18 @kc8_second_16 -14;
+    pos @kc8_first_18 @kc8_second_17 -99;
+    pos @kc8_first_18 @kc8_second_19 -72;
+    pos @kc8_first_18 @kc8_second_25 -158;
+    pos @kc8_first_18 @kc8_second_27 -4;
+    pos @kc8_first_18 @kc8_second_29 -84;
+    pos @kc8_first_18 @kc8_second_30 -20;
+    pos @kc8_first_18 @kc8_second_32 -54;
+    pos @kc8_first_18 @kc8_second_33 -153;
+    pos @kc8_first_18 @kc8_second_35 -4;
+    pos @kc8_first_18 @kc8_second_40 -17;
+    pos @kc8_first_18 @kc8_second_41 -43;
+    pos @kc8_first_18 @kc8_second_42 -26;
+    pos @kc8_first_18 @kc8_second_43 -114;
+    pos @kc8_first_18 @kc8_second_44 -68;
+    pos @kc8_first_18 @kc8_second_47 -21;
+    pos @kc8_first_18 @kc8_second_48 -28;
+    pos @kc8_first_18 @kc8_second_49 -81;
+    pos @kc8_first_18 @kc8_second_50 -89;
+    pos @kc8_first_18 @kc8_second_53 -58;
+    pos @kc8_first_18 @kc8_second_54 -69;
+    pos @kc8_first_18 @kc8_second_55 -7;
+    pos @kc8_first_18 @kc8_second_56 -22;
+    pos @kc8_first_18 @kc8_second_57 -24;
+    pos @kc8_first_18 @kc8_second_58 -34;
+    pos @kc8_first_18 @kc8_second_59 -87;
+    pos @kc8_first_18 @kc8_second_60 -60;
+    pos @kc8_first_18 @kc8_second_62 -35;
+    pos @kc8_first_19 @kc8_second_6 -92;
+    pos @kc8_first_19 @kc8_second_14 -169;
+    pos @kc8_first_19 @kc8_second_16 -37;
+    pos @kc8_first_19 @kc8_second_17 -100;
+    pos @kc8_first_19 @kc8_second_18 -2;
+    pos @kc8_first_19 @kc8_second_25 -32;
+    pos @kc8_first_19 @kc8_second_32 -27;
+    pos @kc8_first_19 @kc8_second_33 -58;
+    pos @kc8_first_19 @kc8_second_49 -79;
+    pos @kc8_first_19 @kc8_second_50 -28;
+    pos @kc8_first_19 @kc8_second_53 -27;
+    pos @kc8_first_19 @kc8_second_54 -14;
+    pos @kc8_first_19 @kc8_second_59 -71;
+    pos @kc8_first_19 @kc8_second_60 -54;
+    pos @kc8_first_19 @kc8_second_62 -12;
+    pos @kc8_first_20 @kc8_second_3 -15;
+    pos @kc8_first_20 @kc8_second_5 -41;
+    pos @kc8_first_20 @kc8_second_6 -14;
+    pos @kc8_first_20 @kc8_second_9 -48;
+    pos @kc8_first_20 @kc8_second_10 -23;
+    pos @kc8_first_20 @kc8_second_11 -10;
+    pos @kc8_first_20 @kc8_second_12 -21;
+    pos @kc8_first_20 @kc8_second_14 -34;
+    pos @kc8_first_20 @kc8_second_16 -57;
+    pos @kc8_first_20 @kc8_second_18 -5;
+    pos @kc8_first_20 @kc8_second_20 -13;
+    pos @kc8_first_20 @kc8_second_23 -47;
+    pos @kc8_first_20 @kc8_second_26 -18;
+    pos @kc8_first_20 @kc8_second_31 -14;
+    pos @kc8_first_20 @kc8_second_46 -27;
+    pos @kc8_first_20 @kc8_second_49 -13;
+    pos @kc8_first_20 @kc8_second_51 -13;
+    pos @kc8_first_20 @kc8_second_52 -76;
+    pos @kc8_first_20 @kc8_second_53 -1;
+    pos @kc8_first_20 @kc8_second_59 -16;
+    pos @kc8_first_20 @kc8_second_62 -5;
+    pos @kc8_first_21 @kc8_second_16 -15;
+    pos @kc8_first_21 @kc8_second_17 -51;
+    pos @kc8_first_21 @kc8_second_25 -15;
+    pos @kc8_first_21 @kc8_second_33 -9;
+    pos @kc8_first_21 @kc8_second_43 -13;
+    pos @kc8_first_21 @kc8_second_49 -57;
+    pos @kc8_first_21 @kc8_second_50 -4;
+    pos @kc8_first_21 @kc8_second_53 -20;
+    pos @kc8_first_21 @kc8_second_59 -56;
+    pos @kc8_first_21 @kc8_second_60 -20;
+    pos @kc8_first_21 @kc8_second_62 -9;
+    pos @kc8_first_22 @kc8_second_6 -8;
+    pos @kc8_first_22 @kc8_second_14 -1;
+    pos @kc8_first_22 @kc8_second_16 -36;
+    pos @kc8_first_22 @kc8_second_17 -29;
+    pos @kc8_first_22 @kc8_second_18 -10;
+    pos @kc8_first_22 @kc8_second_19 -53;
+    pos @kc8_first_22 @kc8_second_25 -25;
+    pos @kc8_first_22 @kc8_second_40 -10;
+    pos @kc8_first_22 @kc8_second_43 -32;
+    pos @kc8_first_22 @kc8_second_48 -9;
+    pos @kc8_first_22 @kc8_second_49 -69;
+    pos @kc8_first_22 @kc8_second_53 -39;
+    pos @kc8_first_22 @kc8_second_56 -8;
+    pos @kc8_first_22 @kc8_second_59 -25;
+    pos @kc8_first_22 @kc8_second_60 -25;
+    pos @kc8_first_22 @kc8_second_62 -10;
+    pos @kc8_first_23 @kc8_second_1 -12;
+    pos @kc8_first_23 @kc8_second_6 -12;
+    pos @kc8_first_23 @kc8_second_13 -26;
+    pos @kc8_first_23 @kc8_second_14 -15;
+    pos @kc8_first_23 @kc8_second_15 -14;
+    pos @kc8_first_23 @kc8_second_16 -16;
+    pos @kc8_first_23 @kc8_second_17 -11;
+    pos @kc8_first_23 @kc8_second_19 -35;
+    pos @kc8_first_23 @kc8_second_25 -25;
+    pos @kc8_first_23 @kc8_second_29 -25;
+    pos @kc8_first_23 @kc8_second_32 -25;
+    pos @kc8_first_23 @kc8_second_33 -25;
+    pos @kc8_first_23 @kc8_second_40 -10;
+    pos @kc8_first_23 @kc8_second_41 -10;
+    pos @kc8_first_23 @kc8_second_42 -7;
+    pos @kc8_first_23 @kc8_second_43 -94;
+    pos @kc8_first_23 @kc8_second_44 -10;
+    pos @kc8_first_23 @kc8_second_47 -4;
+    pos @kc8_first_23 @kc8_second_48 -15;
+    pos @kc8_first_23 @kc8_second_49 -85;
+    pos @kc8_first_23 @kc8_second_50 -10;
+    pos @kc8_first_23 @kc8_second_53 -42;
+    pos @kc8_first_23 @kc8_second_54 -20;
+    pos @kc8_first_23 @kc8_second_58 -4;
+    pos @kc8_first_23 @kc8_second_59 -84;
+    pos @kc8_first_23 @kc8_second_60 -25;
+    pos @kc8_first_23 @kc8_second_62 -10;
+    pos @kc8_first_24 @kc8_second_2 -11;
+    pos @kc8_first_24 @kc8_second_6 -45;
+    pos @kc8_first_24 @kc8_second_7 -21;
+    pos @kc8_first_24 @kc8_second_8 -3;
+    pos @kc8_first_24 @kc8_second_9 -15;
+    pos @kc8_first_24 @kc8_second_10 -14;
+    pos @kc8_first_24 @kc8_second_11 -10;
+    pos @kc8_first_24 @kc8_second_12 -12;
+    pos @kc8_first_24 @kc8_second_14 -12;
+    pos @kc8_first_24 @kc8_second_16 -13;
+    pos @kc8_first_24 @kc8_second_18 -12;
+    pos @kc8_first_24 @kc8_second_19 -3;
+    pos @kc8_first_24 @kc8_second_20 -55;
+    pos @kc8_first_24 @kc8_second_23 -85;
+    pos @kc8_first_24 @kc8_second_25 -12;
+    pos @kc8_first_24 @kc8_second_26 -55;
+    pos @kc8_first_24 @kc8_second_27 -15;
+    pos @kc8_first_24 @kc8_second_28 -25;
+    pos @kc8_first_24 @kc8_second_31 -13;
+    pos @kc8_first_24 @kc8_second_35 -13;
+    pos @kc8_first_24 @kc8_second_36 -8;
+    pos @kc8_first_24 @kc8_second_37 -8;
+    pos @kc8_first_24 @kc8_second_38 -15;
+    pos @kc8_first_24 @kc8_second_39 -8;
+    pos @kc8_first_24 @kc8_second_40 -20;
+    pos @kc8_first_24 @kc8_second_45 -20;
+    pos @kc8_first_24 @kc8_second_46 -25;
+    pos @kc8_first_24 @kc8_second_48 -3;
+    pos @kc8_first_24 @kc8_second_49 -50;
+    pos @kc8_first_24 @kc8_second_51 -70;
+    pos @kc8_first_24 @kc8_second_52 -55;
+    pos @kc8_first_24 @kc8_second_53 -31;
+    pos @kc8_first_24 @kc8_second_56 -11;
+    pos @kc8_first_24 @kc8_second_59 -46;
+    pos @kc8_first_24 @kc8_second_60 -15;
+    pos @kc8_first_24 @kc8_second_61 -15;
+    pos @kc8_first_24 @kc8_second_62 -20;
+    pos @kc8_first_25 @kc8_second_5 -41;
+    pos @kc8_first_25 @kc8_second_6 -15;
+    pos @kc8_first_25 @kc8_second_13 -45;
+    pos @kc8_first_25 @kc8_second_14 -212;
+    pos @kc8_first_25 @kc8_second_15 -25;
+    pos @kc8_first_25 @kc8_second_16 -28;
+    pos @kc8_first_25 @kc8_second_17 -15;
+    pos @kc8_first_25 @kc8_second_18 -20;
+    pos @kc8_first_25 @kc8_second_19 -11;
+    pos @kc8_first_25 @kc8_second_25 -8;
+    pos @kc8_first_25 @kc8_second_27 -15;
+    pos @kc8_first_25 @kc8_second_28 -10;
+    pos @kc8_first_25 @kc8_second_29 -55;
+    pos @kc8_first_25 @kc8_second_30 -25;
+    pos @kc8_first_25 @kc8_second_32 -10;
+    pos @kc8_first_25 @kc8_second_33 -55;
+    pos @kc8_first_25 @kc8_second_35 -10;
+    pos @kc8_first_25 @kc8_second_36 -10;
+    pos @kc8_first_25 @kc8_second_37 -10;
+    pos @kc8_first_25 @kc8_second_40 -10;
+    pos @kc8_first_25 @kc8_second_41 -6;
+    pos @kc8_first_25 @kc8_second_42 -25;
+    pos @kc8_first_25 @kc8_second_43 -15;
+    pos @kc8_first_25 @kc8_second_44 -55;
+    pos @kc8_first_25 @kc8_second_47 -2;
+    pos @kc8_first_25 @kc8_second_49 -15;
+    pos @kc8_first_25 @kc8_second_50 -45;
+    pos @kc8_first_25 @kc8_second_53 -10;
+    pos @kc8_first_25 @kc8_second_54 -35;
+    pos @kc8_first_25 @kc8_second_55 -5;
+    pos @kc8_first_25 @kc8_second_56 -25;
+    pos @kc8_first_25 @kc8_second_57 -10;
+    pos @kc8_first_25 @kc8_second_58 -15;
+    pos @kc8_first_25 @kc8_second_59 -35;
+    pos @kc8_first_25 @kc8_second_60 -75;
+    pos @kc8_first_25 @kc8_second_62 -45;
+    pos @kc8_first_26 @kc8_second_2 -10;
+    pos @kc8_first_26 @kc8_second_3 -7;
+    pos @kc8_first_26 @kc8_second_4 -10;
+    pos @kc8_first_26 @kc8_second_6 -50;
+    pos @kc8_first_26 @kc8_second_8 -2;
+    pos @kc8_first_26 @kc8_second_9 -60;
+    pos @kc8_first_26 @kc8_second_10 -32;
+    pos @kc8_first_26 @kc8_second_11 -17;
+    pos @kc8_first_26 @kc8_second_12 -15;
+    pos @kc8_first_26 @kc8_second_14 -10;
+    pos @kc8_first_26 @kc8_second_16 -9;
+    pos @kc8_first_26 @kc8_second_17 -19;
+    pos @kc8_first_26 @kc8_second_18 -50;
+    pos @kc8_first_26 @kc8_second_20 -3;
+    pos @kc8_first_26 @kc8_second_23 -10;
+    pos @kc8_first_26 @kc8_second_25 -10;
+    pos @kc8_first_26 @kc8_second_26 -10;
+    pos @kc8_first_26 @kc8_second_28 -3;
+    pos @kc8_first_26 @kc8_second_35 -25;
+    pos @kc8_first_26 @kc8_second_39 -11;
+    pos @kc8_first_26 @kc8_second_40 -11;
+    pos @kc8_first_26 @kc8_second_45 -9;
+    pos @kc8_first_26 @kc8_second_46 -29;
+    pos @kc8_first_26 @kc8_second_48 -15;
+    pos @kc8_first_26 @kc8_second_49 -57;
+    pos @kc8_first_26 @kc8_second_51 -7;
+    pos @kc8_first_26 @kc8_second_52 -20;
+    pos @kc8_first_26 @kc8_second_53 -30;
+    pos @kc8_first_26 @kc8_second_59 -25;
+    pos @kc8_first_26 @kc8_second_60 -25;
+    pos @kc8_first_26 @kc8_second_61 -9;
+    pos @kc8_first_26 @kc8_second_62 -10;
+    pos @kc8_first_27 @kc8_second_6 -85;
+    pos @kc8_first_27 @kc8_second_14 -106;
+    pos @kc8_first_27 @kc8_second_16 -20;
+    pos @kc8_first_27 @kc8_second_17 -44;
+    pos @kc8_first_27 @kc8_second_19 -57;
+    pos @kc8_first_27 @kc8_second_25 -97;
+    pos @kc8_first_27 @kc8_second_29 -6;
+    pos @kc8_first_27 @kc8_second_32 -18;
+    pos @kc8_first_27 @kc8_second_33 -1;
+    pos @kc8_first_27 @kc8_second_40 -11;
+    pos @kc8_first_27 @kc8_second_42 -2;
+    pos @kc8_first_27 @kc8_second_43 -45;
+    pos @kc8_first_27 @kc8_second_44 -1;
+    pos @kc8_first_27 @kc8_second_47 -4;
+    pos @kc8_first_27 @kc8_second_48 -12;
+    pos @kc8_first_27 @kc8_second_49 -66;
+    pos @kc8_first_27 @kc8_second_50 -8;
+    pos @kc8_first_27 @kc8_second_53 -34;
+    pos @kc8_first_27 @kc8_second_56 -10;
+    pos @kc8_first_27 @kc8_second_59 -64;
+    pos @kc8_first_27 @kc8_second_60 -29;
+    pos @kc8_first_27 @kc8_second_62 -32;
+    pos @kc8_first_28 @kc8_second_6 -86;
+    pos @kc8_first_28 @kc8_second_14 -171;
+    pos @kc8_first_28 @kc8_second_16 -35;
+    pos @kc8_first_28 @kc8_second_17 -53;
+    pos @kc8_first_28 @kc8_second_18 -8;
+    pos @kc8_first_28 @kc8_second_19 -19;
+    pos @kc8_first_28 @kc8_second_29 -4;
+    pos @kc8_first_28 @kc8_second_33 -16;
+    pos @kc8_first_28 @kc8_second_40 -15;
+    pos @kc8_first_28 @kc8_second_43 -12;
+    pos @kc8_first_28 @kc8_second_49 -97;
+    pos @kc8_first_28 @kc8_second_50 -40;
+    pos @kc8_first_28 @kc8_second_53 -43;
+    pos @kc8_first_28 @kc8_second_54 -16;
+    pos @kc8_first_28 @kc8_second_59 -73;
+    pos @kc8_first_28 @kc8_second_60 -67;
+    pos @kc8_first_28 @kc8_second_62 -33;
+    pos @kc8_first_29 @kc8_second_6 -61;
+    pos @kc8_first_29 @kc8_second_14 -124;
+    pos @kc8_first_29 @kc8_second_16 -44;
+    pos @kc8_first_29 @kc8_second_17 -20;
+    pos @kc8_first_29 @kc8_second_18 -16;
+    pos @kc8_first_29 @kc8_second_25 -31;
+    pos @kc8_first_29 @kc8_second_32 -4;
+    pos @kc8_first_29 @kc8_second_40 -5;
+    pos @kc8_first_29 @kc8_second_48 -4;
+    pos @kc8_first_29 @kc8_second_49 -58;
+    pos @kc8_first_29 @kc8_second_53 -27;
+    pos @kc8_first_29 @kc8_second_59 -55;
+    pos @kc8_first_29 @kc8_second_60 -41;
+    pos @kc8_first_29 @kc8_second_62 -21;
+    pos @kc8_first_30 @kc8_second_1 -1;
+    pos @kc8_first_30 @kc8_second_6 -98;
+    pos @kc8_first_30 @kc8_second_13 -3;
+    pos @kc8_first_30 @kc8_second_14 -154;
+    pos @kc8_first_30 @kc8_second_16 -26;
+    pos @kc8_first_30 @kc8_second_17 -77;
+    pos @kc8_first_30 @kc8_second_19 -26;
+    pos @kc8_first_30 @kc8_second_25 -71;
+    pos @kc8_first_30 @kc8_second_29 -15;
+    pos @kc8_first_30 @kc8_second_32 -28;
+    pos @kc8_first_30 @kc8_second_33 -35;
+    pos @kc8_first_30 @kc8_second_40 -10;
+    pos @kc8_first_30 @kc8_second_43 -42;
+    pos @kc8_first_30 @kc8_second_47 -7;
+    pos @kc8_first_30 @kc8_second_48 -11;
+    pos @kc8_first_30 @kc8_second_49 -76;
+    pos @kc8_first_30 @kc8_second_50 -25;
+    pos @kc8_first_30 @kc8_second_53 -38;
+    pos @kc8_first_30 @kc8_second_54 -19;
+    pos @kc8_first_30 @kc8_second_59 -76;
+    pos @kc8_first_30 @kc8_second_60 -50;
+    pos @kc8_first_30 @kc8_second_62 -27;
+    pos @kc8_first_31 @kc8_second_3 -5;
+    pos @kc8_first_31 @kc8_second_6 -55;
+    pos @kc8_first_31 @kc8_second_9 -25;
+    pos @kc8_first_31 @kc8_second_11 -55;
+    pos @kc8_first_31 @kc8_second_14 -153;
+    pos @kc8_first_31 @kc8_second_16 -80;
+    pos @kc8_first_31 @kc8_second_17 -44;
+    pos @kc8_first_31 @kc8_second_18 -27;
+    pos @kc8_first_31 @kc8_second_23 -80;
+    pos @kc8_first_31 @kc8_second_25 -19;
+    pos @kc8_first_31 @kc8_second_32 -22;
+    pos @kc8_first_31 @kc8_second_33 -12;
+    pos @kc8_first_31 @kc8_second_35 -16;
+    pos @kc8_first_31 @kc8_second_49 -54;
+    pos @kc8_first_31 @kc8_second_50 -2;
+    pos @kc8_first_31 @kc8_second_52 -25;
+    pos @kc8_first_31 @kc8_second_53 -11;
+    pos @kc8_first_31 @kc8_second_59 -25;
+    pos @kc8_first_31 @kc8_second_60 -25;
+    pos @kc8_first_31 @kc8_second_62 -5;
+    pos @kc8_first_32 @kc8_second_6 -52;
+    pos @kc8_first_32 @kc8_second_9 -25;
+    pos @kc8_first_32 @kc8_second_14 -13;
+    pos @kc8_first_32 @kc8_second_16 -70;
+    pos @kc8_first_32 @kc8_second_17 -19;
+    pos @kc8_first_32 @kc8_second_18 -25;
+    pos @kc8_first_32 @kc8_second_23 -25;
+    pos @kc8_first_32 @kc8_second_25 -10;
+    pos @kc8_first_32 @kc8_second_32 -13;
+    pos @kc8_first_32 @kc8_second_49 -58;
+    pos @kc8_first_32 @kc8_second_52 -25;
+    pos @kc8_first_32 @kc8_second_53 -17;
+    pos @kc8_first_32 @kc8_second_59 -48;
+    pos @kc8_first_32 @kc8_second_60 -25;
+    pos @kc8_first_32 @kc8_second_62 -11;
+    pos @kc8_first_33 @kc8_second_2 -7;
+    pos @kc8_first_33 @kc8_second_4 -15;
+    pos @kc8_first_33 @kc8_second_6 -60;
+    pos @kc8_first_33 @kc8_second_9 -40;
+    pos @kc8_first_33 @kc8_second_10 -6;
+    pos @kc8_first_33 @kc8_second_14 -115;
+    pos @kc8_first_33 @kc8_second_16 -82;
+    pos @kc8_first_33 @kc8_second_17 -9;
+    pos @kc8_first_33 @kc8_second_18 -35;
+    pos @kc8_first_33 @kc8_second_19 -34;
+    pos @kc8_first_33 @kc8_second_23 -25;
+    pos @kc8_first_33 @kc8_second_25 -25;
+    pos @kc8_first_33 @kc8_second_39 -13;
+    pos @kc8_first_33 @kc8_second_40 -11;
+    pos @kc8_first_33 @kc8_second_43 -12;
+    pos @kc8_first_33 @kc8_second_45 -5;
+    pos @kc8_first_33 @kc8_second_46 -8;
+    pos @kc8_first_33 @kc8_second_49 -55;
+    pos @kc8_first_33 @kc8_second_52 -35;
+    pos @kc8_first_33 @kc8_second_53 -27;
+    pos @kc8_first_33 @kc8_second_59 -55;
+    pos @kc8_first_33 @kc8_second_60 -25;
+    pos @kc8_first_33 @kc8_second_62 -29;
+    pos @kc8_first_34 @kc8_second_2 -20;
+    pos @kc8_first_34 @kc8_second_3 -73;
+    pos @kc8_first_34 @kc8_second_4 -30;
+    pos @kc8_first_34 @kc8_second_5 -15;
+    pos @kc8_first_34 @kc8_second_6 -51;
+    pos @kc8_first_34 @kc8_second_7 -34;
+    pos @kc8_first_34 @kc8_second_8 -10;
+    pos @kc8_first_34 @kc8_second_9 -15;
+    pos @kc8_first_34 @kc8_second_10 -13;
+    pos @kc8_first_34 @kc8_second_11 -25;
+    pos @kc8_first_34 @kc8_second_12 -25;
+    pos @kc8_first_34 @kc8_second_14 -55;
+    pos @kc8_first_34 @kc8_second_16 -13;
+    pos @kc8_first_34 @kc8_second_18 -10;
+    pos @kc8_first_34 @kc8_second_19 -50;
+    pos @kc8_first_34 @kc8_second_20 -55;
+    pos @kc8_first_34 @kc8_second_23 -55;
+    pos @kc8_first_34 @kc8_second_25 -15;
+    pos @kc8_first_34 @kc8_second_26 -55;
+    pos @kc8_first_34 @kc8_second_27 -10;
+    pos @kc8_first_34 @kc8_second_28 -10;
+    pos @kc8_first_34 @kc8_second_31 -15;
+    pos @kc8_first_34 @kc8_second_32 -5;
+    pos @kc8_first_34 @kc8_second_35 -20;
+    pos @kc8_first_34 @kc8_second_38 -10;
+    pos @kc8_first_34 @kc8_second_39 -10;
+    pos @kc8_first_34 @kc8_second_40 -10;
+    pos @kc8_first_34 @kc8_second_43 -3;
+    pos @kc8_first_34 @kc8_second_45 -10;
+    pos @kc8_first_34 @kc8_second_46 -35;
+    pos @kc8_first_34 @kc8_second_47 -26;
+    pos @kc8_first_34 @kc8_second_48 -10;
+    pos @kc8_first_34 @kc8_second_49 -74;
+    pos @kc8_first_34 @kc8_second_51 -75;
+    pos @kc8_first_34 @kc8_second_52 -55;
+    pos @kc8_first_34 @kc8_second_53 -37;
+    pos @kc8_first_34 @kc8_second_56 -10;
+    pos @kc8_first_34 @kc8_second_59 -54;
+    pos @kc8_first_34 @kc8_second_60 -40;
+    pos @kc8_first_34 @kc8_second_61 -22;
+    pos @kc8_first_34 @kc8_second_62 -52;
+    pos @kc8_first_35 @kc8_second_1 -15;
+    pos @kc8_first_35 @kc8_second_4 -3;
+    pos @kc8_first_35 @kc8_second_6 -14;
+    pos @kc8_first_35 @kc8_second_9 -11;
+    pos @kc8_first_35 @kc8_second_13 -13;
+    pos @kc8_first_35 @kc8_second_14 -20;
+    pos @kc8_first_35 @kc8_second_16 -65;
+    pos @kc8_first_35 @kc8_second_17 -17;
+    pos @kc8_first_35 @kc8_second_18 -7;
+    pos @kc8_first_35 @kc8_second_19 -15;
+    pos @kc8_first_35 @kc8_second_23 -10;
+    pos @kc8_first_35 @kc8_second_25 -11;
+    pos @kc8_first_35 @kc8_second_29 -10;
+    pos @kc8_first_35 @kc8_second_32 -10;
+    pos @kc8_first_35 @kc8_second_33 -13;
+    pos @kc8_first_35 @kc8_second_34 -1;
+    pos @kc8_first_35 @kc8_second_43 -10;
+    pos @kc8_first_35 @kc8_second_49 -103;
+    pos @kc8_first_35 @kc8_second_50 -10;
+    pos @kc8_first_35 @kc8_second_52 -9;
+    pos @kc8_first_35 @kc8_second_53 -25;
+    pos @kc8_first_35 @kc8_second_54 -15;
+    pos @kc8_first_35 @kc8_second_59 -91;
+    pos @kc8_first_35 @kc8_second_60 -10;
+    pos @kc8_first_35 @kc8_second_62 -11;
+    pos @kc8_first_36 @kc8_second_9 -2;
+    pos @kc8_first_36 @kc8_second_10 -4;
+    pos @kc8_first_36 @kc8_second_11 -14;
+    pos @kc8_first_36 @kc8_second_12 -48;
+    pos @kc8_first_36 @kc8_second_14 -12;
+    pos @kc8_first_36 @kc8_second_16 -10;
+    pos @kc8_first_36 @kc8_second_17 -3;
+    pos @kc8_first_36 @kc8_second_18 -67;
+    pos @kc8_first_36 @kc8_second_19 -74;
+    pos @kc8_first_36 @kc8_second_20 -3;
+    pos @kc8_first_36 @kc8_second_21 -20;
+    pos @kc8_first_36 @kc8_second_22 -7;
+    pos @kc8_first_36 @kc8_second_23 -3;
+    pos @kc8_first_36 @kc8_second_26 -10;
+    pos @kc8_first_36 @kc8_second_27 -20;
+    pos @kc8_first_36 @kc8_second_31 -10;
+    pos @kc8_first_36 @kc8_second_34 -13;
+    pos @kc8_first_36 @kc8_second_35 -44;
+    pos @kc8_first_36 @kc8_second_36 -28;
+    pos @kc8_first_36 @kc8_second_37 -29;
+    pos @kc8_first_36 @kc8_second_38 -12;
+    pos @kc8_first_36 @kc8_second_39 -35;
+    pos @kc8_first_36 @kc8_second_40 -41;
+    pos @kc8_first_36 @kc8_second_42 -6;
+    pos @kc8_first_36 @kc8_second_43 -33;
+    pos @kc8_first_36 @kc8_second_45 -20;
+    pos @kc8_first_36 @kc8_second_46 -52;
+    pos @kc8_first_36 @kc8_second_49 -90;
+    pos @kc8_first_36 @kc8_second_51 -42;
+    pos @kc8_first_36 @kc8_second_53 -52;
+    pos @kc8_first_36 @kc8_second_55 -29;
+    pos @kc8_first_36 @kc8_second_56 -46;
+    pos @kc8_first_36 @kc8_second_59 -74;
+    pos @kc8_first_36 @kc8_second_60 -20;
+    pos @kc8_first_36 @kc8_second_61 -30;
+    pos @kc8_first_36 @kc8_second_62 -50;
+    pos @kc8_first_37 @kc8_second_1 -17;
+    pos @kc8_first_37 @kc8_second_5 -39;
+    pos @kc8_first_37 @kc8_second_6 -124;
+    pos @kc8_first_37 @kc8_second_13 -35;
+    pos @kc8_first_37 @kc8_second_14 -18;
+    pos @kc8_first_37 @kc8_second_15 -24;
+    pos @kc8_first_37 @kc8_second_16 -28;
+    pos @kc8_first_37 @kc8_second_17 -104;
+    pos @kc8_first_37 @kc8_second_18 -14;
+    pos @kc8_first_37 @kc8_second_19 -74;
+    pos @kc8_first_37 @kc8_second_27 -23;
+    pos @kc8_first_37 @kc8_second_29 -15;
+    pos @kc8_first_37 @kc8_second_30 -10;
+    pos @kc8_first_37 @kc8_second_31 -10;
+    pos @kc8_first_37 @kc8_second_33 -10;
+    pos @kc8_first_37 @kc8_second_35 -8;
+    pos @kc8_first_37 @kc8_second_37 -1;
+    pos @kc8_first_37 @kc8_second_40 -41;
+    pos @kc8_first_37 @kc8_second_41 -23;
+    pos @kc8_first_37 @kc8_second_42 -33;
+    pos @kc8_first_37 @kc8_second_43 -10;
+    pos @kc8_first_37 @kc8_second_44 -30;
+    pos @kc8_first_37 @kc8_second_49 -121;
+    pos @kc8_first_37 @kc8_second_50 -25;
+    pos @kc8_first_37 @kc8_second_53 -10;
+    pos @kc8_first_37 @kc8_second_54 -25;
+    pos @kc8_first_37 @kc8_second_55 -15;
+    pos @kc8_first_37 @kc8_second_56 -38;
+    pos @kc8_first_37 @kc8_second_57 -15;
+    pos @kc8_first_37 @kc8_second_58 -26;
+    pos @kc8_first_37 @kc8_second_59 -10;
+    pos @kc8_first_37 @kc8_second_60 -25;
+    pos @kc8_first_37 @kc8_second_62 -60;
+    pos @kc8_first_38 @kc8_second_6 -65;
+    pos @kc8_first_38 @kc8_second_9 -4;
+    pos @kc8_first_38 @kc8_second_14 -133;
+    pos @kc8_first_38 @kc8_second_16 -62;
+    pos @kc8_first_38 @kc8_second_17 -23;
+    pos @kc8_first_38 @kc8_second_18 -32;
+    pos @kc8_first_38 @kc8_second_19 -8;
+    pos @kc8_first_38 @kc8_second_21 -1;
+    pos @kc8_first_38 @kc8_second_23 -20;
+    pos @kc8_first_38 @kc8_second_25 -60;
+    pos @kc8_first_38 @kc8_second_28 -13;
+    pos @kc8_first_38 @kc8_second_32 -17;
+    pos @kc8_first_38 @kc8_second_35 -5;
+    pos @kc8_first_38 @kc8_second_39 -4;
+    pos @kc8_first_38 @kc8_second_40 -14;
+    pos @kc8_first_38 @kc8_second_47 -8;
+    pos @kc8_first_38 @kc8_second_48 -20;
+    pos @kc8_first_38 @kc8_second_49 -74;
+    pos @kc8_first_38 @kc8_second_52 -11;
+    pos @kc8_first_38 @kc8_second_53 -35;
+    pos @kc8_first_38 @kc8_second_59 -62;
+    pos @kc8_first_38 @kc8_second_60 -47;
+    pos @kc8_first_38 @kc8_second_61 -8;
+    pos @kc8_first_38 @kc8_second_62 -29;
+    pos @kc8_first_39 @kc8_second_6 -25;
+    pos @kc8_first_39 @kc8_second_13 -25;
+    pos @kc8_first_39 @kc8_second_14 -15;
+    pos @kc8_first_39 @kc8_second_15 -47;
+    pos @kc8_first_39 @kc8_second_16 -9;
+    pos @kc8_first_39 @kc8_second_17 -22;
+    pos @kc8_first_39 @kc8_second_19 -62;
+    pos @kc8_first_39 @kc8_second_25 -15;
+    pos @kc8_first_39 @kc8_second_29 -10;
+    pos @kc8_first_39 @kc8_second_30 -8;
+    pos @kc8_first_39 @kc8_second_32 -10;
+    pos @kc8_first_39 @kc8_second_33 -75;
+    pos @kc8_first_39 @kc8_second_40 -12;
+    pos @kc8_first_39 @kc8_second_41 -20;
+    pos @kc8_first_39 @kc8_second_42 -15;
+    pos @kc8_first_39 @kc8_second_43 -16;
+    pos @kc8_first_39 @kc8_second_44 -20;
+    pos @kc8_first_39 @kc8_second_48 -10;
+    pos @kc8_first_39 @kc8_second_49 -10;
+    pos @kc8_first_39 @kc8_second_50 -20;
+    pos @kc8_first_39 @kc8_second_53 -45;
+    pos @kc8_first_39 @kc8_second_54 -25;
+    pos @kc8_first_39 @kc8_second_56 -5;
+    pos @kc8_first_39 @kc8_second_57 -2;
+    pos @kc8_first_39 @kc8_second_58 -15;
+    pos @kc8_first_39 @kc8_second_59 -99;
+    pos @kc8_first_39 @kc8_second_60 -55;
+    pos @kc8_first_39 @kc8_second_62 -32;
+    pos @kc8_first_40 @kc8_second_6 -93;
+    pos @kc8_first_40 @kc8_second_19 -29;
+    pos @kc8_first_40 @kc8_second_25 -5;
+    pos @kc8_first_40 @kc8_second_29 -2;
+    pos @kc8_first_40 @kc8_second_40 -4;
+    pos @kc8_first_40 @kc8_second_43 -41;
+    pos @kc8_first_40 @kc8_second_47 -37;
+    pos @kc8_first_40 @kc8_second_48 -18;
+    pos @kc8_first_40 @kc8_second_49 -93;
+    pos @kc8_first_40 @kc8_second_50 -10;
+    pos @kc8_first_40 @kc8_second_53 -25;
+    pos @kc8_first_40 @kc8_second_60 -45;
+    pos @kc8_first_40 @kc8_second_62 -25;
+    pos @kc8_first_41 @kc8_second_16 -5;
+    pos @kc8_first_41 @kc8_second_25 -10;
+    pos @kc8_first_41 @kc8_second_32 -30;
+    pos @kc8_first_41 @kc8_second_33 -30;
+    pos @kc8_first_41 @kc8_second_34 -6;
+    pos @kc8_first_41 @kc8_second_39 -4;
+    pos @kc8_first_41 @kc8_second_50 -25;
+    pos @kc8_first_41 @kc8_second_53 -8;
+    pos @kc8_first_41 @kc8_second_54 -20;
+    pos @kc8_first_41 @kc8_second_59 -73;
+    pos @kc8_first_41 @kc8_second_60 -20;
+    pos @kc8_first_41 @kc8_second_62 -10;
+    pos @kc8_first_42 @kc8_second_3 -3;
+    pos @kc8_first_42 @kc8_second_5 -8;
+    pos @kc8_first_42 @kc8_second_12 -10;
+    pos @kc8_first_42 @kc8_second_23 -25;
+    pos @kc8_first_42 @kc8_second_25 -25;
+    pos @kc8_first_42 @kc8_second_26 -4;
+    pos @kc8_first_42 @kc8_second_28 -12;
+    pos @kc8_first_42 @kc8_second_32 -25;
+    pos @kc8_first_42 @kc8_second_33 -8;
+    pos @kc8_first_42 @kc8_second_34 -11;
+    pos @kc8_first_42 @kc8_second_35 -19;
+    pos @kc8_first_42 @kc8_second_36 -1;
+    pos @kc8_first_42 @kc8_second_39 -17;
+    pos @kc8_first_42 @kc8_second_46 -17;
+    pos @kc8_first_42 @kc8_second_48 -10;
+    pos @kc8_first_42 @kc8_second_50 -17;
+    pos @kc8_first_42 @kc8_second_51 -13;
+    pos @kc8_first_42 @kc8_second_52 -20;
+    pos @kc8_first_42 @kc8_second_54 -1;
+    pos @kc8_first_42 @kc8_second_61 -10;
+    pos @kc8_first_43 @kc8_second_3 -10;
+    pos @kc8_first_43 @kc8_second_6 -10;
+    pos @kc8_first_43 @kc8_second_9 -20;
+    pos @kc8_first_43 @kc8_second_10 -10;
+    pos @kc8_first_43 @kc8_second_11 -25;
+    pos @kc8_first_43 @kc8_second_14 -35;
+    pos @kc8_first_43 @kc8_second_16 -35;
+    pos @kc8_first_43 @kc8_second_20 -5;
+    pos @kc8_first_43 @kc8_second_23 -55;
+    pos @kc8_first_43 @kc8_second_26 -14;
+    pos @kc8_first_43 @kc8_second_46 -20;
+    pos @kc8_first_43 @kc8_second_47 -6;
+    pos @kc8_first_43 @kc8_second_49 -25;
+    pos @kc8_first_43 @kc8_second_52 -45;
+    pos @kc8_first_43 @kc8_second_53 -11;
+    pos @kc8_first_43 @kc8_second_59 -15;
+    pos @kc8_first_43 @kc8_second_60 -10;
+    pos @kc8_first_44 @kc8_second_14 -10;
+    pos @kc8_first_44 @kc8_second_16 -10;
+    pos @kc8_first_44 @kc8_second_17 -25;
+    pos @kc8_first_44 @kc8_second_18 -2;
+    pos @kc8_first_44 @kc8_second_25 -10;
+    pos @kc8_first_44 @kc8_second_32 -10;
+    pos @kc8_first_44 @kc8_second_33 -10;
+    pos @kc8_first_44 @kc8_second_48 -10;
+    pos @kc8_first_44 @kc8_second_49 -30;
+    pos @kc8_first_44 @kc8_second_50 -20;
+    pos @kc8_first_44 @kc8_second_53 -20;
+    pos @kc8_first_44 @kc8_second_54 -17;
+    pos @kc8_first_44 @kc8_second_59 -35;
+    pos @kc8_first_44 @kc8_second_60 -7;
+    pos @kc8_first_44 @kc8_second_62 -18;
+    pos @kc8_first_45 @kc8_second_6 -45;
+    pos @kc8_first_45 @kc8_second_13 -15;
+    pos @kc8_first_45 @kc8_second_14 -55;
+    pos @kc8_first_45 @kc8_second_15 -13;
+    pos @kc8_first_45 @kc8_second_16 -18;
+    pos @kc8_first_45 @kc8_second_17 -55;
+    pos @kc8_first_45 @kc8_second_19 -49;
+    pos @kc8_first_45 @kc8_second_25 -35;
+    pos @kc8_first_45 @kc8_second_29 -25;
+    pos @kc8_first_45 @kc8_second_32 -25;
+    pos @kc8_first_45 @kc8_second_33 -25;
+    pos @kc8_first_45 @kc8_second_35 -1;
+    pos @kc8_first_45 @kc8_second_40 -14;
+    pos @kc8_first_45 @kc8_second_41 -19;
+    pos @kc8_first_45 @kc8_second_43 -10;
+    pos @kc8_first_45 @kc8_second_44 -20;
+    pos @kc8_first_45 @kc8_second_47 -6;
+    pos @kc8_first_45 @kc8_second_48 -11;
+    pos @kc8_first_45 @kc8_second_49 -55;
+    pos @kc8_first_45 @kc8_second_50 -55;
+    pos @kc8_first_45 @kc8_second_53 -55;
+    pos @kc8_first_45 @kc8_second_54 -47;
+    pos @kc8_first_45 @kc8_second_59 -10;
+    pos @kc8_first_45 @kc8_second_60 -45;
+    pos @kc8_first_45 @kc8_second_62 -30;
+    pos @kc8_first_46 @kc8_second_1 -2;
+    pos @kc8_first_46 @kc8_second_3 -8;
+    pos @kc8_first_46 @kc8_second_4 -10;
+    pos @kc8_first_46 @kc8_second_6 -45;
+    pos @kc8_first_46 @kc8_second_8 -13;
+    pos @kc8_first_46 @kc8_second_9 -15;
+    pos @kc8_first_46 @kc8_second_10 -10;
+    pos @kc8_first_46 @kc8_second_11 -10;
+    pos @kc8_first_46 @kc8_second_14 -15;
+    pos @kc8_first_46 @kc8_second_16 -15;
+    pos @kc8_first_46 @kc8_second_17 -15;
+    pos @kc8_first_46 @kc8_second_18 -15;
+    pos @kc8_first_46 @kc8_second_23 -10;
+    pos @kc8_first_46 @kc8_second_33 -10;
+    pos @kc8_first_46 @kc8_second_34 -10;
+    pos @kc8_first_46 @kc8_second_35 -10;
+    pos @kc8_first_46 @kc8_second_39 -20;
+    pos @kc8_first_46 @kc8_second_43 -19;
+    pos @kc8_first_46 @kc8_second_45 -10;
+    pos @kc8_first_46 @kc8_second_46 -10;
+    pos @kc8_first_46 @kc8_second_47 -6;
+    pos @kc8_first_46 @kc8_second_49 -74;
+    pos @kc8_first_46 @kc8_second_50 -45;
+    pos @kc8_first_46 @kc8_second_52 -10;
+    pos @kc8_first_46 @kc8_second_53 -37;
+    pos @kc8_first_46 @kc8_second_54 -15;
+    pos @kc8_first_46 @kc8_second_59 -25;
+    pos @kc8_first_46 @kc8_second_60 -25;
+    pos @kc8_first_46 @kc8_second_61 -2;
+    pos @kc8_first_46 @kc8_second_62 -36;
+    pos @kc8_first_47 @kc8_second_3 -57;
+    pos @kc8_first_47 @kc8_second_5 -100;
+    pos @kc8_first_47 @kc8_second_7 -55;
+    pos @kc8_first_47 @kc8_second_8 -30;
+    pos @kc8_first_47 @kc8_second_9 -140;
+    pos @kc8_first_47 @kc8_second_10 -18;
+    pos @kc8_first_47 @kc8_second_11 -10;
+    pos @kc8_first_47 @kc8_second_12 -100;
+    pos @kc8_first_47 @kc8_second_13 -8;
+    pos @kc8_first_47 @kc8_second_15 -12;
+    pos @kc8_first_47 @kc8_second_19 -16;
+    pos @kc8_first_47 @kc8_second_20 -85;
+    pos @kc8_first_47 @kc8_second_21 -16;
+    pos @kc8_first_47 @kc8_second_22 -15;
+    pos @kc8_first_47 @kc8_second_23 -100;
+    pos @kc8_first_47 @kc8_second_24 -12;
+    pos @kc8_first_47 @kc8_second_25 -21;
+    pos @kc8_first_47 @kc8_second_26 -100;
+    pos @kc8_first_47 @kc8_second_27 -85;
+    pos @kc8_first_47 @kc8_second_28 -19;
+    pos @kc8_first_47 @kc8_second_29 -15;
+    pos @kc8_first_47 @kc8_second_30 -14;
+    pos @kc8_first_47 @kc8_second_31 -85;
+    pos @kc8_first_47 @kc8_second_32 -19;
+    pos @kc8_first_47 @kc8_second_33 -17;
+    pos @kc8_first_47 @kc8_second_34 -17;
+    pos @kc8_first_47 @kc8_second_35 -23;
+    pos @kc8_first_47 @kc8_second_36 -14;
+    pos @kc8_first_47 @kc8_second_38 -18;
+    pos @kc8_first_47 @kc8_second_39 -18;
+    pos @kc8_first_47 @kc8_second_42 -14;
+    pos @kc8_first_47 @kc8_second_43 -23;
+    pos @kc8_first_47 @kc8_second_44 -16;
+    pos @kc8_first_47 @kc8_second_46 -16;
+    pos @kc8_first_47 @kc8_second_47 -9;
+    pos @kc8_first_47 @kc8_second_48 -13;
+    pos @kc8_first_47 @kc8_second_50 -19;
+    pos @kc8_first_47 @kc8_second_51 -13;
+    pos @kc8_first_47 @kc8_second_52 -85;
+    pos @kc8_first_47 @kc8_second_54 -15;
+    pos @kc8_first_47 @kc8_second_55 -16;
+    pos @kc8_first_47 @kc8_second_56 -16;
+    pos @kc8_first_47 @kc8_second_57 -5;
+    pos @kc8_first_47 @kc8_second_58 -5;
+    pos @kc8_first_47 @kc8_second_61 -17;
+    pos @kc8_first_48 @kc8_second_1 -2;
+    pos @kc8_first_48 @kc8_second_6 -55;
+    pos @kc8_first_48 @kc8_second_13 -20;
+    pos @kc8_first_48 @kc8_second_14 -85;
+    pos @kc8_first_48 @kc8_second_16 -5;
+    pos @kc8_first_48 @kc8_second_17 -55;
+    pos @kc8_first_48 @kc8_second_18 -18;
+    pos @kc8_first_48 @kc8_second_19 -7;
+    pos @kc8_first_48 @kc8_second_25 -11;
+    pos @kc8_first_48 @kc8_second_29 -25;
+    pos @kc8_first_48 @kc8_second_32 -40;
+    pos @kc8_first_48 @kc8_second_33 -86;
+    pos @kc8_first_48 @kc8_second_40 -11;
+    pos @kc8_first_48 @kc8_second_43 -35;
+    pos @kc8_first_48 @kc8_second_47 -3;
+    pos @kc8_first_48 @kc8_second_48 -8;
+    pos @kc8_first_48 @kc8_second_49 -10;
+    pos @kc8_first_48 @kc8_second_50 -60;
+    pos @kc8_first_48 @kc8_second_53 -45;
+    pos @kc8_first_48 @kc8_second_54 -25;
+    pos @kc8_first_48 @kc8_second_59 -55;
+    pos @kc8_first_48 @kc8_second_60 -45;
+    pos @kc8_first_48 @kc8_second_62 -10;
+    pos @kc8_first_49 @kc8_second_1 -75;
+    pos @kc8_first_49 @kc8_second_5 -97;
+    pos @kc8_first_49 @kc8_second_6 -263;
+    pos @kc8_first_49 @kc8_second_13 -169;
+    pos @kc8_first_49 @kc8_second_14 -279;
+    pos @kc8_first_49 @kc8_second_15 -187;
+    pos @kc8_first_49 @kc8_second_16 -14;
+    pos @kc8_first_49 @kc8_second_17 -291;
+    pos @kc8_first_49 @kc8_second_18 -8;
+    pos @kc8_first_49 @kc8_second_19 -213;
+    pos @kc8_first_49 @kc8_second_27 -115;
+    pos @kc8_first_49 @kc8_second_28 -3;
+    pos @kc8_first_49 @kc8_second_29 -223;
+    pos @kc8_first_49 @kc8_second_30 -106;
+    pos @kc8_first_49 @kc8_second_31 -85;
+    pos @kc8_first_49 @kc8_second_32 -10;
+    pos @kc8_first_49 @kc8_second_33 -261;
+    pos @kc8_first_49 @kc8_second_35 -207;
+    pos @kc8_first_49 @kc8_second_36 -1;
+    pos @kc8_first_49 @kc8_second_37 -5;
+    pos @kc8_first_49 @kc8_second_40 -97;
+    pos @kc8_first_49 @kc8_second_41 -166;
+    pos @kc8_first_49 @kc8_second_42 -138;
+    pos @kc8_first_49 @kc8_second_43 -253;
+    pos @kc8_first_49 @kc8_second_44 -202;
+    pos @kc8_first_49 @kc8_second_49 -207;
+    pos @kc8_first_49 @kc8_second_50 -180;
+    pos @kc8_first_49 @kc8_second_53 -200;
+    pos @kc8_first_49 @kc8_second_54 -166;
+    pos @kc8_first_49 @kc8_second_55 -96;
+    pos @kc8_first_49 @kc8_second_56 -177;
+    pos @kc8_first_49 @kc8_second_57 -141;
+    pos @kc8_first_49 @kc8_second_58 -148;
+    pos @kc8_first_49 @kc8_second_59 -208;
+    pos @kc8_first_49 @kc8_second_60 -182;
+    pos @kc8_first_49 @kc8_second_62 -128;
+    pos @kc8_first_50 @kc8_second_1 -34;
+    pos @kc8_first_50 @kc8_second_3 -82;
+    pos @kc8_first_50 @kc8_second_5 -194;
+    pos @kc8_first_50 @kc8_second_7 -116;
+    pos @kc8_first_50 @kc8_second_8 -74;
+    pos @kc8_first_50 @kc8_second_9 -200;
+    pos @kc8_first_50 @kc8_second_10 -22;
+    pos @kc8_first_50 @kc8_second_11 -40;
+    pos @kc8_first_50 @kc8_second_12 -183;
+    pos @kc8_first_50 @kc8_second_13 -55;
+    pos @kc8_first_50 @kc8_second_15 -101;
+    pos @kc8_first_50 @kc8_second_19 -29;
+    pos @kc8_first_50 @kc8_second_20 -176;
+    pos @kc8_first_50 @kc8_second_21 -154;
+    pos @kc8_first_50 @kc8_second_22 -144;
+    pos @kc8_first_50 @kc8_second_23 -236;
+    pos @kc8_first_50 @kc8_second_24 -137;
+    pos @kc8_first_50 @kc8_second_25 -222;
+    pos @kc8_first_50 @kc8_second_26 -187;
+    pos @kc8_first_50 @kc8_second_27 -146;
+    pos @kc8_first_50 @kc8_second_28 -172;
+    pos @kc8_first_50 @kc8_second_29 -156;
+    pos @kc8_first_50 @kc8_second_30 -110;
+    pos @kc8_first_50 @kc8_second_31 -177;
+    pos @kc8_first_50 @kc8_second_32 -177;
+    pos @kc8_first_50 @kc8_second_33 -179;
+    pos @kc8_first_50 @kc8_second_34 -165;
+    pos @kc8_first_50 @kc8_second_35 -195;
+    pos @kc8_first_50 @kc8_second_36 -132;
+    pos @kc8_first_50 @kc8_second_38 -154;
+    pos @kc8_first_50 @kc8_second_39 -181;
+    pos @kc8_first_50 @kc8_second_42 -140;
+    pos @kc8_first_50 @kc8_second_43 -57;
+    pos @kc8_first_50 @kc8_second_44 -156;
+    pos @kc8_first_50 @kc8_second_46 -161;
+    pos @kc8_first_50 @kc8_second_47 -108;
+    pos @kc8_first_50 @kc8_second_48 -128;
+    pos @kc8_first_50 @kc8_second_50 -166;
+    pos @kc8_first_50 @kc8_second_51 -152;
+    pos @kc8_first_50 @kc8_second_52 -335;
+    pos @kc8_first_50 @kc8_second_54 -154;
+    pos @kc8_first_50 @kc8_second_55 -144;
+    pos @kc8_first_50 @kc8_second_56 -153;
+    pos @kc8_first_50 @kc8_second_57 -93;
+    pos @kc8_first_50 @kc8_second_58 -78;
+    pos @kc8_first_50 @kc8_second_61 -165;
+    pos @kc8_first_51 @kc8_second_6 -10;
+    pos @kc8_first_51 @kc8_second_14 -13;
+    pos @kc8_first_51 @kc8_second_16 -4;
+    pos @kc8_first_51 @kc8_second_17 -2;
+    pos @kc8_first_51 @kc8_second_18 -4;
+    pos @kc8_first_51 @kc8_second_23 -10;
+    pos @kc8_first_51 @kc8_second_25 -7;
+    pos @kc8_first_51 @kc8_second_32 -6;
+    pos @kc8_first_51 @kc8_second_49 -10;
+    pos @kc8_first_51 @kc8_second_52 -10;
+    pos @kc8_first_51 @kc8_second_53 -2;
+    pos @kc8_first_51 @kc8_second_59 -30;
+    pos @kc8_first_51 @kc8_second_60 -15;
+    pos @kc8_first_52 @kc8_second_3 -2;
+    pos @kc8_first_52 @kc8_second_5 -10;
+    pos @kc8_first_52 @kc8_second_7 -10;
+    pos @kc8_first_52 @kc8_second_8 -18;
+    pos @kc8_first_52 @kc8_second_9 -20;
+    pos @kc8_first_52 @kc8_second_12 -15;
+    pos @kc8_first_52 @kc8_second_13 -13;
+    pos @kc8_first_52 @kc8_second_15 -20;
+    pos @kc8_first_52 @kc8_second_21 -10;
+    pos @kc8_first_52 @kc8_second_22 -20;
+    pos @kc8_first_52 @kc8_second_23 -25;
+    pos @kc8_first_52 @kc8_second_24 -10;
+    pos @kc8_first_52 @kc8_second_25 -55;
+    pos @kc8_first_52 @kc8_second_26 -3;
+    pos @kc8_first_52 @kc8_second_27 -10;
+    pos @kc8_first_52 @kc8_second_28 -30;
+    pos @kc8_first_52 @kc8_second_29 -12;
+    pos @kc8_first_52 @kc8_second_31 -13;
+    pos @kc8_first_52 @kc8_second_33 -13;
+    pos @kc8_first_52 @kc8_second_35 -30;
+    pos @kc8_first_52 @kc8_second_36 -31;
+    pos @kc8_first_52 @kc8_second_39 -5;
+    pos @kc8_first_52 @kc8_second_42 -5;
+    pos @kc8_first_52 @kc8_second_43 -14;
+    pos @kc8_first_52 @kc8_second_44 -10;
+    pos @kc8_first_52 @kc8_second_46 -40;
+    pos @kc8_first_52 @kc8_second_48 -7;
+    pos @kc8_first_52 @kc8_second_50 -10;
+    pos @kc8_first_52 @kc8_second_51 -40;
+    pos @kc8_first_52 @kc8_second_52 -13;
+    pos @kc8_first_52 @kc8_second_54 -8;
+    pos @kc8_first_52 @kc8_second_55 -36;
+    pos @kc8_first_52 @kc8_second_56 -5;
+    pos @kc8_first_52 @kc8_second_57 -3;
+    pos @kc8_first_52 @kc8_second_58 -2;
+    pos @kc8_first_52 @kc8_second_61 -30;
+    pos @kc8_first_53 @kc8_second_4 55;
+    pos @kc8_first_53 @kc8_second_5 -38;
+    pos @kc8_first_53 @kc8_second_7 -3;
+    pos @kc8_first_53 @kc8_second_8 -4;
+    pos @kc8_first_53 @kc8_second_9 -55;
+    pos @kc8_first_53 @kc8_second_10 -20;
+    pos @kc8_first_53 @kc8_second_11 -3;
+    pos @kc8_first_53 @kc8_second_12 -25;
+    pos @kc8_first_53 @kc8_second_13 -25;
+    pos @kc8_first_53 @kc8_second_14 -3;
+    pos @kc8_first_53 @kc8_second_20 -23;
+    pos @kc8_first_53 @kc8_second_21 -33;
+    pos @kc8_first_53 @kc8_second_22 -25;
+    pos @kc8_first_53 @kc8_second_23 -55;
+    pos @kc8_first_53 @kc8_second_24 -30;
+    pos @kc8_first_53 @kc8_second_25 -55;
+    pos @kc8_first_53 @kc8_second_26 -31;
+    pos @kc8_first_53 @kc8_second_27 -19;
+    pos @kc8_first_53 @kc8_second_28 -36;
+    pos @kc8_first_53 @kc8_second_29 -25;
+    pos @kc8_first_53 @kc8_second_30 -25;
+    pos @kc8_first_53 @kc8_second_31 -25;
+    pos @kc8_first_53 @kc8_second_32 -25;
+    pos @kc8_first_53 @kc8_second_33 -12;
+    pos @kc8_first_53 @kc8_second_34 -6;
+    pos @kc8_first_53 @kc8_second_35 -6;
+    pos @kc8_first_53 @kc8_second_36 25;
+    pos @kc8_first_53 @kc8_second_37 10;
+    pos @kc8_first_53 @kc8_second_38 -6;
+    pos @kc8_first_53 @kc8_second_39 -79;
+    pos @kc8_first_53 @kc8_second_40 15;
+    pos @kc8_first_53 @kc8_second_41 -13;
+    pos @kc8_first_53 @kc8_second_42 -29;
+    pos @kc8_first_53 @kc8_second_43 -9;
+    pos @kc8_first_53 @kc8_second_44 -25;
+    pos @kc8_first_53 @kc8_second_46 -56;
+    pos @kc8_first_53 @kc8_second_47 -25;
+    pos @kc8_first_53 @kc8_second_48 -35;
+    pos @kc8_first_53 @kc8_second_50 -25;
+    pos @kc8_first_53 @kc8_second_52 -20;
+    pos @kc8_first_53 @kc8_second_54 -25;
+    pos @kc8_first_53 @kc8_second_55 -22;
+    pos @kc8_first_53 @kc8_second_56 -26;
+    pos @kc8_first_53 @kc8_second_57 -2;
+    pos @kc8_first_53 @kc8_second_58 -10;
+    pos @kc8_first_53 @kc8_second_59 -3;
+    pos @kc8_first_53 @kc8_second_61 -4;
+    pos @kc8_first_53 @kc8_second_62 25;
+    pos @kc8_first_54 @kc8_second_1 -30;
+    pos @kc8_first_54 @kc8_second_5 -50;
+    pos @kc8_first_54 @kc8_second_6 -11;
+    pos @kc8_first_54 @kc8_second_7 -10;
+    pos @kc8_first_54 @kc8_second_8 -10;
+    pos @kc8_first_54 @kc8_second_9 -25;
+    pos @kc8_first_54 @kc8_second_10 -5;
+    pos @kc8_first_54 @kc8_second_11 -6;
+    pos @kc8_first_54 @kc8_second_12 -4;
+    pos @kc8_first_54 @kc8_second_13 -2;
+    pos @kc8_first_54 @kc8_second_15 -17;
+    pos @kc8_first_54 @kc8_second_16 -11;
+    pos @kc8_first_54 @kc8_second_17 -10;
+    pos @kc8_first_54 @kc8_second_20 -38;
+    pos @kc8_first_54 @kc8_second_21 -37;
+    pos @kc8_first_54 @kc8_second_22 -28;
+    pos @kc8_first_54 @kc8_second_23 -55;
+    pos @kc8_first_54 @kc8_second_24 -17;
+    pos @kc8_first_54 @kc8_second_25 -75;
+    pos @kc8_first_54 @kc8_second_26 -44;
+    pos @kc8_first_54 @kc8_second_27 -19;
+    pos @kc8_first_54 @kc8_second_28 -45;
+    pos @kc8_first_54 @kc8_second_29 -36;
+    pos @kc8_first_54 @kc8_second_30 -7;
+    pos @kc8_first_54 @kc8_second_31 -33;
+    pos @kc8_first_54 @kc8_second_32 -59;
+    pos @kc8_first_54 @kc8_second_33 -55;
+    pos @kc8_first_54 @kc8_second_34 -45;
+    pos @kc8_first_54 @kc8_second_35 -60;
+    pos @kc8_first_54 @kc8_second_38 -21;
+    pos @kc8_first_54 @kc8_second_39 -54;
+    pos @kc8_first_54 @kc8_second_40 25;
+    pos @kc8_first_54 @kc8_second_42 -23;
+    pos @kc8_first_54 @kc8_second_43 -7;
+    pos @kc8_first_54 @kc8_second_44 -31;
+    pos @kc8_first_54 @kc8_second_48 -25;
+    pos @kc8_first_54 @kc8_second_49 -11;
+    pos @kc8_first_54 @kc8_second_50 -25;
+    pos @kc8_first_54 @kc8_second_52 -25;
+    pos @kc8_first_54 @kc8_second_53 -7;
+    pos @kc8_first_54 @kc8_second_54 -39;
+    pos @kc8_first_54 @kc8_second_55 -24;
+    pos @kc8_first_54 @kc8_second_56 -21;
+    pos @kc8_first_54 @kc8_second_57 -13;
+    pos @kc8_first_54 @kc8_second_58 -16;
+    pos @kc8_first_54 @kc8_second_59 -10;
+    pos @kc8_first_54 @kc8_second_60 -25;
+    pos @kc8_first_54 @kc8_second_61 -45;
+    pos @kc8_first_54 @kc8_second_62 15;
+} kernHorizontalKerning;
+
+lookup markDiacriticalMarks {
+  lookupflag 0;
+  markClass [\uni033E ] <anchor 31 597> @Yerik;
+  markClass [\uniA67D ] <anchor -142 596> @Yerik;
+  markClass [\uniE004 ] <anchor -213 656> @Above;
+  markClass [\uni2DF1 ] <anchor -79 498> @Above;
+  markClass [\acutecomb \uni030B ] <anchor -213 622> @Above;
+  markClass [\gravecomb ] <anchor -177 622> @Above;
+  markClass [\uniE001 ] <anchor -203 546> @Above;
+  markClass [\uniE003 ] <anchor -177 610> @Above;
+  markClass [\uni0486 ] <anchor -203 570> @Above;
+  markClass [\uniE000 ] <anchor -194 688> @Above;
+  markClass [\uniA67C ] <anchor -167 590> @Above;
+  markClass [\uni2DEC \uni2DE9 \uni2DE00487 \uni2DEB ] <anchor -99 498> @Above;
+  markClass [\uni2DE2 ] <anchor -102 498> @Above;
+  markClass [\uni2DE3 ] <anchor -196 496> @Above;
+  markClass [\uni2DE4 ] <anchor -215 498> @Above;
+  markClass [\uni2DEA ] <anchor -95 498> @Above;
+  markClass [\uni0311 ] <anchor -236 618> @Above;
+  markClass [\uni0483 ] <anchor -249 706> @Above;
+  markClass [\uni0483.short ] <anchor -235 584> @Above;
+  markClass [\uni2DEF ] <anchor -210 498> @Above;
+  markClass [\uni0483.tiny ] <anchor -177 589> @Above;
+  markClass [\uni2DE5 ] <anchor -200 498> @Above;
+  markClass [\uni2DE1 ] <anchor -93 498> @Above;
+  markClass [\uni0483.long ] <anchor -279 588> @Above;
+  markClass [\uni2DED ] <anchor -71 498> @Above;
+  markClass [\uniE002 ] <anchor -243 686> @Above;
+  markClass [\uni0485 ] <anchor -199 566> @Above;
+  markClass [\uni0487 ] <anchor -223 678> @Above;
+  markClass [\uni2DEE ] <anchor -269 498> @Above;
+  markClass [\uniE005 ] <anchor -227 488> @Above;
+  markClass [\uni0306 ] <anchor -219 692> @Above;
+  markClass [\uni0307 ] <anchor -175 712> @Above;
+  markClass [\uni0308 ] <anchor -251 712> @Above;
+  markClass [\uni030F ] <anchor -167 672> @Above;
+  markClass [\uni2DE10487 ] <anchor -118 496> @Above;
+  markClass [\uni2DE20487 \uni2DED0487 \uni2DE60487 \uni2DF00487 ] <anchor -129 498> @Above;
+  markClass [\uni2DE90487 ] <anchor -121 498> @Above;
+  markClass [\uni2DEA0487 ] <anchor -122 500> @Above;
+  markClass [\uni2DEC0487 ] <anchor -115 499> @Above;
+  markClass [\uni2DF10487 ] <anchor -127 502> @Above;
+  markClass [\uni2DF5 ] <anchor -289 498> @Above;
+  markClass [\uni2DE6 ] <anchor -103 498> @Above;
+  markClass [\uni2DE8 ] <anchor -193 498> @Above;
+  markClass [\uni2DE7 \uni2DE0 ] <anchor -83 498> @Above;
+  markClass [\uni2DFD ] <anchor -126 498> @Above;
+  markClass [\uni2DE70487 \uni2DEB0487 ] <anchor -119 498> @Above;
+  markClass [\uni2DFD0487 ] <anchor -139 498> @Above;
+  markClass [\uni2DF20487 \uni2DF30487 ] <anchor -159 498> @Above;
+  markClass [\uni2DF2 \uni2DF3 ] <anchor -143 498> @Above;
+  markClass [\uni2DF0 ] <anchor -122 498> @Above;
+  markClass [\uni2DF4 ] <anchor -154 498> @Above;
+  markClass [\uni2DEE0487 ] <anchor -213 497> @Above;
+  markClass [\uni0484 ] <anchor -99 566> @Above;
+  markClass [\uniA675 ] <anchor -213 519> @Above;
+  pos base [\afii10103 ] <anchor 147 623> mark @Yerik
+	<anchor 147 623> mark @Above;
+  pos base [\afii10017 \afii10040 \afii10022 \afii10028 \afii10029 \afii10031 \afii10044 \afii10035 \uniA64A \afii10019 \afii10053 \afii10047 ] <anchor 408 680> mark @Yerik
+	<anchor 327 680> mark @Above;
+  pos base [\afii10018 ] <anchor 388 680> mark @Yerik
+	<anchor 256 680> mark @Above;
+  pos base [\afii10021 ] <anchor 508 680> mark @Yerik
+	<anchor 419 680> mark @Above;
+  pos base [\afii10038 ] <anchor 538 680> mark @Yerik
+	<anchor 329 680> mark @Above;
+  pos base [\afii10020 ] <anchor 338 680> mark @Yerik
+	<anchor 227 680> mark @Above;
+  pos base [\afii10039 ] <anchor 448 680> mark @Yerik
+	<anchor 290 680> mark @Above;
+  pos base [\afii10026 ] <anchor 412 680> mark @Yerik
+	<anchor 275 680> mark @Above;
+  pos base [\afii10024 \uni046A ] <anchor 618 680> mark @Yerik
+	<anchor 369 680> mark @Above;
+  pos base [\afii10030 \uniA656 ] <anchor 628 680> mark @Yerik
+	<anchor 475 680> mark @Above;
+  pos base [\afii10032 ] <anchor 377 680> mark @Yerik
+	<anchor 279 680> mark @Above;
+  pos base [\afii10033 ] <anchor 418 680> mark @Yerik
+	<anchor 287 680> mark @Above;
+  pos base [\afii10034 ] <anchor 438 680> mark @Yerik
+	<anchor 319 680> mark @Above;
+  pos base [\afii10036 ] <anchor 498 680> mark @Yerik
+	<anchor 308 680> mark @Above;
+  pos base [\afii10042 \afii10043 ] <anchor 658 680> mark @Yerik
+	<anchor 397 680> mark @Above;
+  pos base [\afii10045 ] <anchor 608 680> mark @Yerik
+	<anchor 379 680> mark @Above;
+  pos base [\afii10025 ] <anchor 468 680> mark @Yerik
+	<anchor 333 680> mark @Above;
+  pos base [\afii10094 \afii10066 \afii10074 \afii10079 \afii10080 \afii10081 \afii10092 \afii10067 ] <anchor 367 623> mark @Yerik
+	<anchor 257 623> mark @Above;
+  pos base [\afii10065 ] <anchor 232 625> mark @Yerik
+	<anchor 233 623> mark @Above;
+  pos base [\afii10088 \afii10076 \afii10085 ] <anchor 397 623> mark @Yerik
+	<anchor 257 623> mark @Above;
+  pos base [\afii10069 \uni1C81 ] <anchor 387 623> mark @Yerik
+	<anchor 257 623> mark @Above;
+  pos base [\afii10070 ] <anchor 227 623> mark @Yerik
+	<anchor 167 623> mark @Above;
+  pos base [\afii10086 ] <anchor 587 623> mark @Yerik
+	<anchor 347 723> mark @Above;
+  pos base [\afii10068 ] <anchor 303 623> mark @Yerik
+	<anchor 197 623> mark @Above;
+  pos base [\afii10087 \afii10077 ] <anchor 327 623> mark @Yerik
+	<anchor 207 623> mark @Above;
+  pos base [\afii10072 ] <anchor 557 623> mark @Yerik
+	<anchor 358 623> mark @Above;
+  pos base [\afii10078 \uni0471 ] <anchor 537 623> mark @Yerik
+	<anchor 397 623> mark @Above;
+  pos base [\afii10082 \afii10083 ] <anchor 247 623> mark @Yerik
+	<anchor 187 623> mark @Above;
+  pos base [\afii10084 \afii10093 \uniA657 \uniE907 ] <anchor 517 623> mark @Yerik
+	<anchor 337 623> mark @Above;
+  pos base [\uniA64B ] <anchor 367 801> mark @Yerik
+	<anchor 257 802> mark @Above;
+  pos base [\afii10090 ] <anchor 707 623> mark @Yerik
+	<anchor 420 623> mark @Above;
+  pos base [\afii10073 ] <anchor 467 623> mark @Yerik
+	<anchor 307 623> mark @Above;
+  pos base [\afii10046 ] <anchor 403 680> mark @Yerik
+	<anchor 289 680> mark @Above;
+  pos base [\afii10041 ] <anchor 399 680> mark @Yerik
+	<anchor 253 680> mark @Above;
+  pos base [\afii10089 ] <anchor 347 623> mark @Yerik
+	<anchor 217 623> mark @Above;
+  pos base [\uniE8E3 ] <anchor 257 871> mark @Yerik
+	<anchor 257 873> mark @Above;
+  pos base [\afii10075 ] <anchor 267 803> mark @Yerik
+	<anchor 269 803> mark @Above;
+  pos base [\afii10091 ] <anchor 657 623> mark @Yerik
+	<anchor 397 623> mark @Above;
+  pos base [\afii10102 ] <anchor 487 623> mark @Yerik
+	<anchor 257 623> mark @Above;
+  pos base [\afii10048 \uni0464 \afii10057 ] <anchor 638 680> mark @Yerik
+	<anchor 350 680> mark @Above;
+  pos base [\uniE8E5 ] <anchor 267 863> mark @Yerik
+	<anchor 267 863> mark @Above;
+  pos base [\afii10096 \uni0465 ] <anchor 447 623> mark @Yerik
+	<anchor 297 623> mark @Above;
+  pos base [\uniE901 ] <anchor 367 880> mark @Yerik
+	<anchor 367 878> mark @Above;
+  pos base [\uniE903 ] <anchor 337 913> mark @Yerik
+	<anchor 334 913> mark @Above;
+  pos base [\uniE904 ] <anchor 337 893> mark @Yerik
+	<anchor 337 893> mark @Above;
+  pos base [\afii10101 ] <anchor 437 623> mark @Yerik
+	<anchor 317 623> mark @Above;
+  pos base [\afii10027 ] <anchor 287 930> mark @Yerik
+	<anchor 289 930> mark @Above;
+  pos base [\uniE8E1 ] <anchor 256 821> mark @Yerik
+	<anchor 257 821> mark @Above;
+  pos base [\uniE926 \afii10104 \afii10105 ] <anchor 137 743> mark @Yerik
+	<anchor 137 745> mark @Above;
+  pos base [\afii10054 ] <anchor 478 680> mark @Yerik
+	<anchor 289 680> mark @Above;
+  pos base [\afii10055 ] <anchor 148 680> mark @Yerik
+	<anchor 147 680> mark @Above;
+  pos base [\afii10194 ] <anchor 497 623> mark @Yerik
+	<anchor 497 623> mark @Above;
+  pos base [\afii10146 ] <anchor 568 680> mark @Yerik
+	<anchor 357 680> mark @Above;
+  pos base [\uni0466 \afii10147 ] <anchor 588 680> mark @Yerik
+	<anchor 359 680> mark @Above;
+  pos base [\uni0467 \uni1C83 \uniA641 ] <anchor 287 623> mark @Yerik
+	<anchor 287 623> mark @Above;
+  pos base [\afii10195 ] <anchor 597 623> mark @Yerik
+	<anchor 417 623> mark @Above;
+  pos base [\afii10148 ] <anchor 458 680> mark @Yerik
+	<anchor 289 680> mark @Above;
+  pos base [\afii10196 ] <anchor 417 623> mark @Yerik
+	<anchor 257 623> mark @Above;
+  pos base [\uni0476 ] <anchor 408 1000> mark @Yerik
+	<anchor 259 1000> mark @Above;
+  pos base [\uni0477 ] <anchor 227 893> mark @Yerik
+	<anchor 227 893> mark @Above;
+  pos base [\uni047A ] <anchor 708 680> mark @Yerik
+	<anchor 409 720> mark @Above;
+  pos base [\uni047B ] <anchor 617 623> mark @Yerik
+	<anchor 365 623> mark @Above;
+  pos base [\uni0470 ] <anchor 608 740> mark @Yerik
+	<anchor 340 800> mark @Above;
+  pos base [\uni047C ] <anchor 548 1020> mark @Yerik
+	<anchor 549 1020> mark @Above;
+  pos base [\uni047D ] <anchor 497 863> mark @Yerik
+	<anchor 497 864> mark @Above;
+  pos base [\uni047E ] <anchor 437 890> mark @Yerik
+	<anchor 437 890> mark @Above;
+  pos base [\uni047F ] <anchor 647 773> mark @Yerik
+	<anchor 407 773> mark @Above;
+  pos base [\uni0478 ] <anchor 897 623> mark @Yerik
+	<anchor 727 623> mark @Above;
+  pos base [\uni0479 \uni0461 \uni0469 ] <anchor 637 623> mark @Yerik
+	<anchor 507 623> mark @Above;
+  pos base [\uni0460 ] <anchor 469 680> mark @Above
+	<anchor 718 680> mark @Yerik;
+  pos base [\uni046E ] <anchor 482 800> mark @Yerik
+	<anchor 289 800> mark @Above;
+  pos base [\uni046F ] <anchor 367 683> mark @Yerik
+	<anchor 257 683> mark @Above;
+  pos base [\afii10037 ] <anchor 440 680> mark @Yerik
+	<anchor 289 680> mark @Above;
+  pos base [\afii10056 ] <anchor 133 891> mark @Yerik
+	<anchor 131 892> mark @Above;
+  pos base [\uni0450 ] <anchor 177 925> mark @Yerik
+	<anchor 177 923> mark @Above;
+  pos base [\uni0400 ] <anchor 408 951> mark @Yerik
+	<anchor 270 953> mark @Above;
+  pos base [\afii10023 ] <anchor 257 894> mark @Yerik
+	<anchor 255 894> mark @Above;
+  pos base [\afii10052 ] <anchor 243 938> mark @Yerik
+	<anchor 245 938> mark @Above;
+  pos base [\afii10061 ] <anchor 324 938> mark @Yerik
+	<anchor 325 938> mark @Above;
+  pos base [\uni040D \afii10062 ] <anchor 288 920> mark @Yerik
+	<anchor 289 919> mark @Above;
+  pos base [\afii10095 ] <anchor 457 623> mark @Yerik
+	<anchor 307 623> mark @Above;
+  pos base [\afii10071 ] <anchor 157 743> mark @Yerik
+	<anchor 157 743> mark @Above;
+  pos base [\afii10100 ] <anchor 187 893> mark @Yerik
+	<anchor 187 893> mark @Above;
+  pos base [\afii10109 ] <anchor 307 883> mark @Yerik
+	<anchor 307 886> mark @Above;
+  pos base [\uni045D ] <anchor 227 883> mark @Yerik
+	<anchor 227 883> mark @Above;
+  pos base [\afii10110 ] <anchor 257 803> mark @Yerik
+	<anchor 257 803> mark @Above;
+  pos base [\uniA64C ] <anchor 948 680> mark @Yerik
+	<anchor 528 680> mark @Above;
+  pos base [\uniA64D ] <anchor 887 623> mark @Yerik
+	<anchor 507 623> mark @Above;
+  pos base [\uni1C82 ] <anchor 137 623> mark @Yerik
+	<anchor 137 623> mark @Above;
+  pos base [\uni046B ] <anchor 357 623> mark @Above
+	<anchor 627 623> mark @Yerik;
+  pos base [\uni0468 ] <anchor 629 680> mark @Above
+	<anchor 888 680> mark @Yerik;
+  pos base [\uni046C ] <anchor 639 680> mark @Above
+	<anchor 878 680> mark @Yerik;
+  pos base [\uni046D ] <anchor 597 623> mark @Above
+	<anchor 837 623> mark @Yerik;
+  pos base [\uni1C85 ] <anchor 407 623> mark @Above
+	<anchor 705 623> mark @Yerik;
+  pos base [\uni0460.alt ] <anchor 728 680> mark @Yerik
+	<anchor 429 680> mark @Above;
+  pos base [\uniA640 ] <anchor 327 903> mark @Above
+	<anchor 327 903> mark @Yerik;
+} markDiacriticalMarks;
+
+lookup mkmkStackingofDiacriticalMarks {
+  lookupflag 0;
+  markClass [\uniE004 ] <anchor -213 655> @Stack;
+  markClass [\uni2DF1 ] <anchor -79 495> @Stack;
+  markClass [\acutecomb \uni030B ] <anchor -209 623> @Stack;
+  markClass [\gravecomb ] <anchor -174 623> @Stack;
+  markClass [\uniE001 ] <anchor -204 544> @Stack;
+  markClass [\uniE003 ] <anchor -174 613> @Stack;
+  markClass [\uni0486 ] <anchor -204 573> @Stack;
+  markClass [\uniE000 ] <anchor -194 684> @Stack;
+  markClass [\uniA67C ] <anchor -168 589> @Stack;
+  markClass [\uni2DEC \uni2DE9 \uni2DEB ] <anchor -99 495> @Stack;
+  markClass [\uni2DE2 ] <anchor -102 495> @Stack;
+  markClass [\uni2DE3 ] <anchor -196 498> @Stack;
+  markClass [\uni2DE4 ] <anchor -215 495> @Stack;
+  markClass [\uni033E ] <anchor 27 593> @Stack;
+  markClass [\uni2DEA ] <anchor -95 495> @Stack;
+  markClass [\uni0311 ] <anchor -235 619> @Stack;
+  markClass [\uni0483 ] <anchor -250 705> @Stack;
+  markClass [\uni0483.short ] <anchor -234 583> @Stack;
+  markClass [\uni2DEF ] <anchor -210 495> @Stack;
+  markClass [\uni0483.tiny ] <anchor -175 586> @Stack;
+  markClass [\uni2DE5 ] <anchor -200 495> @Stack;
+  markClass [\uni2DE1 ] <anchor -93 495> @Stack;
+  markClass [\uni0483.long ] <anchor -279 590> @Stack;
+  markClass [\uni2DED ] <anchor -71 495> @Stack;
+  markClass [\uniE002 ] <anchor -244 683> @Stack;
+  markClass [\uni0485 ] <anchor -201 564> @Stack;
+  markClass [\uni0487 ] <anchor -223 675> @Stack;
+  markClass [\uniA67D ] <anchor -144 597> @Stack;
+  markClass [\uni2DEE ] <anchor -269 495> @Stack;
+  markClass [\uniE005 ] <anchor -225 490> @Stack;
+  markClass [\uni0306 ] <anchor -219 689> @Stack;
+  markClass [\uni0307 ] <anchor -174 710> @Stack;
+  markClass [\uni0308 ] <anchor -254 713> @Stack;
+  markClass [\uni030F ] <anchor -170 671> @Stack;
+  markClass [\uni2DE10487 ] <anchor -121 493> @Stack;
+  markClass [\uni2DE20487 \uni2DED0487 \uni2DE60487 \uni2DF00487 ] <anchor -131 500> @Stack;
+  markClass [\uni2DE90487 ] <anchor -124 495> @Stack;
+  markClass [\uni2DEA0487 ] <anchor -124 500> @Stack;
+  markClass [\uni2DEC0487 ] <anchor -113 499> @Stack;
+  markClass [\uni2DF10487 ] <anchor -132 501> @Stack;
+  markClass [\uni2DF5 ] <anchor -289 495> @Stack;
+  markClass [\uni2DE6 ] <anchor -103 495> @Stack;
+  markClass [\uni2DE00487 ] <anchor -101 500> @Stack;
+  markClass [\uni2DE8 ] <anchor -193 495> @Stack;
+  markClass [\uni2DE7 \uni2DE0 ] <anchor -83 495> @Stack;
+  markClass [\uni2DFD ] <anchor -126 495> @Stack;
+  markClass [\uni2DE70487 \uni2DEB0487 ] <anchor -121 500> @Stack;
+  markClass [\uni2DFD0487 ] <anchor -141 500> @Stack;
+  markClass [\uni2DF20487 \uni2DF30487 ] <anchor -161 500> @Stack;
+  markClass [\uni2DF2 \uni2DF3 ] <anchor -143 495> @Stack;
+  markClass [\uni2DF0 ] <anchor -122 495> @Stack;
+  markClass [\uni2DF4 ] <anchor -154 495> @Stack;
+  markClass [\uni2DEE0487 ] <anchor -211 502> @Stack;
+  markClass [\uni0484 ] <anchor -101 564> @Stack;
+  markClass [\uniA675 ] <anchor -214 521> @Stack;
+  pos mark [\uniE004 ] <anchor -235 934> mark @Stack;
+  pos mark [\uni2DF1 ] <anchor -81 774> mark @Stack;
+  pos mark [\acutecomb \uni030B ] <anchor -179 902> mark @Stack;
+  pos mark [\gravecomb ] <anchor -196 902> mark @Stack;
+  pos mark [\uniE001 ] <anchor -226 823> mark @Stack;
+  pos mark [\uniE003 ] <anchor -196 892> mark @Stack;
+  pos mark [\uni0486 ] <anchor -226 852> mark @Stack;
+  pos mark [\uniE000 ] <anchor -216 963> mark @Stack;
+  pos mark [\uniA67C ] <anchor -190 868> mark @Stack;
+  pos mark [\uni2DEC \uni2DE9 \uni2DEB ] <anchor -101 774> mark @Stack;
+  pos mark [\uni2DE2 ] <anchor -104 774> mark @Stack;
+  pos mark [\uni2DE3 ] <anchor -238 817> mark @Stack;
+  pos mark [\uni2DE4 ] <anchor -217 744> mark @Stack;
+  pos mark [\uni033E ] <anchor 5 872> mark @Stack;
+  pos mark [\uni2DEA ] <anchor -97 774> mark @Stack;
+  pos mark [\uni0311 ] <anchor -257 898> mark @Stack;
+  pos mark [\uni0483 ] <anchor -272 984> mark @Stack;
+  pos mark [\uni0483.short ] <anchor -256 862> mark @Stack;
+  pos mark [\uni2DEF ] <anchor -222 744> mark @Stack;
+  pos mark [\uni0483.tiny ] <anchor -197 865> mark @Stack;
+  pos mark [\uni2DE5 ] <anchor -172 784> mark @Stack;
+  pos mark [\uni2DE1 ] <anchor -95 774> mark @Stack;
+  pos mark [\uni0483.long ] <anchor -301 869> mark @Stack;
+  pos mark [\uni2DED ] <anchor -73 774> mark @Stack;
+  pos mark [\uniE002 ] <anchor -266 962> mark @Stack;
+  pos mark [\uni0485 ] <anchor -223 843> mark @Stack;
+  pos mark [\uni0487 ] <anchor -225 804> mark @Stack;
+  pos mark [\uniA67D ] <anchor -166 876> mark @Stack;
+  pos mark [\uni2DEE ] <anchor -271 774> mark @Stack;
+  pos mark [\uniE005 ] <anchor -227 919> mark @Stack;
+  pos mark [\uni0306 ] <anchor -241 968> mark @Stack;
+  pos mark [\uni0307 ] <anchor -196 989> mark @Stack;
+  pos mark [\uni0308 ] <anchor -276 992> mark @Stack;
+  pos mark [\uni030F ] <anchor -192 950> mark @Stack;
+  pos mark [\uni2DE10487 \uni2DE70487 \uni2DEB0487 ] <anchor -126 882> mark @Stack;
+  pos mark [\uni2DE20487 \uni2DE60487 \uni2DF00487 ] <anchor -136 882> mark @Stack;
+  pos mark [\uni2DE90487 ] <anchor -126 884> mark @Stack;
+  pos mark [\uni2DEA0487 ] <anchor -125 889> mark @Stack;
+  pos mark [\uni2DEC0487 ] <anchor -126 888> mark @Stack;
+  pos mark [\uni2DED0487 ] <anchor -136 862> mark @Stack;
+  pos mark [\uni2DF10487 ] <anchor -135 866> mark @Stack;
+  pos mark [\uni2DF5 ] <anchor -171 794> mark @Stack;
+  pos mark [\uni2DE6 ] <anchor -105 774> mark @Stack;
+  pos mark [\uni2DE00487 ] <anchor -106 882> mark @Stack;
+  pos mark [\uni2DE8 ] <anchor -175 744> mark @Stack;
+  pos mark [\uni2DE7 \uni2DE0 ] <anchor -85 774> mark @Stack;
+  pos mark [\uni2DFD ] <anchor -128 774> mark @Stack;
+  pos mark [\uni2DFD0487 ] <anchor -146 882> mark @Stack;
+  pos mark [\uni2DF20487 \uni2DF30487 ] <anchor -166 882> mark @Stack;
+  pos mark [\uni2DF2 \uni2DF3 ] <anchor -145 774> mark @Stack;
+  pos mark [\uni2DF0 ] <anchor -124 774> mark @Stack;
+  pos mark [\uni2DF4 ] <anchor -136 760> mark @Stack;
+  pos mark [\uni2DEE0487 ] <anchor -213 821> mark @Stack;
+  pos mark [\uni0484 ] <anchor -123 843> mark @Stack;
+  pos mark [\uniA675 ] <anchor -236 800> mark @Stack;
+} mkmkStackingofDiacriticalMarks;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerning;
+
+ script cyrl;
+     language dflt ;
+      lookup kernHorizontalKerning;
+
+ script geor;
+     language dflt ;
+      lookup kernHorizontalKerning;
+
+ script latn;
+     language dflt ;
+      lookup kernHorizontalKerning;
+} kern;
+
+feature mark {
+
+ script DFLT;
+     language dflt ;
+      lookup markDiacriticalMarks;
+
+ script cyrl;
+     language dflt ;
+      lookup markDiacriticalMarks;
+
+ script latn;
+     language dflt ;
+      lookup markDiacriticalMarks;
+} mark;
+
+feature mkmk {
+
+ script DFLT;
+     language dflt ;
+      lookup mkmkStackingofDiacriticalMarks;
+
+ script cyrl;
+     language dflt ;
+      lookup mkmkStackingofDiacriticalMarks;
+
+ script latn;
+     language dflt ;
+      lookup mkmkStackingofDiacriticalMarks;
+} mkmk;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\.null \space \afii10103 \comma \hyphen \period \bracketright 
+	\asterisk \bracketleft \colon \semicolon \afii10017 \afii10018 \afii10040 
+	\afii10021 \afii10022 \afii10038 \afii10020 \afii10039 \afii10026 \afii10024 
+	\afii10028 \afii10029 \afii10030 \afii10031 \afii10032 \afii10033 \afii10044 
+	\afii10034 \afii10035 \afii10036 \uniA64A \afii10019 \afii10042 \afii10045 
+	\afii10025 \afii10094 \afii10065 \afii10066 \afii10088 \afii10069 \afii10070 
+	\afii10086 \afii10068 \afii10087 \afii10074 \afii10072 \afii10076 \afii10077 
+	\afii10078 \afii10079 \afii10080 \afii10081 \afii10092 \afii10082 \afii10083 
+	\afii10084 \uniA64B \afii10067 \afii10090 \afii10093 \afii10073 \afii10046 
+	\uniA656 \afii10041 \uniA657 \afii10089 \afii10091 \afii10102 \afii10048 
+	\nbspace \uni2E2F \afii10096 \exclam \afii10043 \afii10101 \afii10054 
+	\afii10055 \parenleft \parenright \guillemotleft \guillemotright \logicalnot 
+	\sfthyphen \endash \emdash \paragraph \periodcentered \quotedblbase 
+	\quotedblright \quotedblleft \quotesinglbase \quoteleft \quoteright \quotedbl 
+	\quotesingle \grave \slash \uni2027 \afii10194 \afii10146 \uni0466 \uni0467 
+	\afii10147 \afii10195 \afii10148 \afii10196 \uni047A \uni047B \uni0470 \uni0471 
+	\uni047E \uni047F \uni0478 \uni0460 \uni0461 \uni046E \uni046F \afii10053 
+	\uni0482 \underscore \afii10085 \afii10037 \afii10047 \afii10049 \afii10097 
+	\afii10095 \uni045D \uniA64C \uniA64D \uniA673 \uniA67F \uniA67E \uni000D 
+	\uni1C82 \uni2011 \afii300 \afii299 \afii301 \afii61664 \uni200B \uni200A 
+	\uni2009 \uni2008 \uni2007 \uni2006 \uni2005 \uni2004 \uni2003 \uni2002 \uni2001 
+	\uni2000 \uni046A \uni046B \uni0468 \uni046C \uni046D \uni0469 \uni1C83 \uni1C85 
+	\u1F540 \u1F542 \u1F543 \u1F544 \u1F541 \bar \uni0360 \uni0463.short \uniA66F 
+	\uni0460.alt \uni1C81 \uni0465 \uni0464 \numbersign \dollar \percent \ampersand 
+	\plus \zero \one \two \three \four \five \six \seven \eight \nine \less \equal 
+	\greater \question \at \A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z 
+	\backslash \asciicircum \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y 
+	\z \braceleft \braceright \currency \section \asciitilde \acute \afii10057 
+	\afii10105 \uni10FB \dagger \bullet \onedotenleader \twodotenleader \ellipsis 
+	\uni203B \uni2052 \uni2053 \uni2056 \uni2058 \uni2059 \uni205C \uni205D \uni205E 
+	\Euro \uni20DD \uni2219 \uni223B \similar \uni223D \uni2241 \uni2626 \uni263D 
+	\uni263E \uni271A \uni2720 \uni2734 \uni29DF \uni2E2A \uni2E2B \uni2E2C \uni2E2D 
+	\uni2E34 \uni2E43 \uni2E45 \uni2E46 \uni2E47 \uni2E48 \uni2E49 \uniA640 \uniA641 
+	\uniE5D0 \uniE5D1 \uniE5D2 \uniE5D3 \uniE5D4 \uniE5D5 \uniE5D6 \uniE5D7 \u1F545 
+	\u1F311 \u1F312 \u1F313 \u1F314 \u1F315 \u1F316 \u1F317 \u1F318 \u1F319 \u1F347 
+	\u1F377 \u1F41F \uni007F \exclamdown \cent \sterling \yen \brokenbar \dieresis 
+	\copyright \ordfeminine \registered \macron \degree \plusminus \uni00B2 
+	\uni00B3 \mu \cedilla \uni00B9 \ordmasculine \onequarter \onehalf 
+	\threequarters \questiondown \Agrave \Aacute \Acircumflex \Atilde \Adieresis 
+	\Aring \AE \Ccedilla \Egrave \Eacute \Ecircumflex \Edieresis \Igrave \Iacute 
+	\Icircumflex \Idieresis \Eth \Ntilde \Ograve \Oacute \Ocircumflex \Otilde 
+	\Odieresis \multiply \Oslash \Ugrave \Uacute \Ucircumflex \Udieresis \Yacute 
+	\Thorn \germandbls \agrave \aacute \acircumflex \atilde \adieresis \aring \ae 
+	\ccedilla \egrave \eacute \ecircumflex \edieresis \igrave \iacute \icircumflex 
+	\idieresis \eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \divide 
+	\oslash \ugrave \uacute \ucircumflex \udieresis \yacute \thorn \ydieresis 
+	\dotlessi \OE \oe \circumflex \ring \tilde \guilsinglleft \guilsinglright 
+	\fraction \uni2074 \figuredash \minus \uni2215 ];
+@GDEF_Ligature = [\uniE8E3 \afii10075 \uniE8E5 \uniE901 \uniE903 \uniE904 
+	\afii10027 \uniE8E1 \uniE926 \uni0476 \uni0477 \uni047C \uni047D \uni0479 
+	\afii10056 \afii10104 \uni0450 \uni0400 \afii10023 \afii10052 \afii10061 
+	\uni040D \afii10062 \afii10071 \afii10100 \afii10109 \afii10110 \uni047E0301 
+	\uni047F0301 \uniE907 \uniE925 \uni04630486 ];
+@GDEF_Mark = [\uniE004 \uni2DF1 \acutecomb \gravecomb \uniE001 \uniE003 \uni0486 
+	\uniE000 \uniA67C \uni2DEC \uni2DE2 \uni2DE3 \uni2DE4 \uni033E \uni2DEA \uni0311 
+	\uni2DE9 \uni0483 \uni0483.short \uni2DEF \uni0483.tiny \uni2DE5 \uni2DE1 
+	\uni0483.long \uni2DED \uniE002 \uni0485 \uni0487 \uniA67D \uni2DEE \uniE005 
+	\uni0306 \uni0307 \uni0308 \uni030F \uni2DE10487 \uni2DE20487 \uni2DE90487 
+	\uni2DEA0487 \uni2DEC0487 \uni2DED0487 \uni2DF10487 \uni2DF5 \uni2DE6 
+	\uni2DE60487 \uni2DE00487 \uni2DE8 \uni2DE7 \uni2DFD \uni2DE70487 \uni2DFD0487 
+	\uni2DEB0487 \uni2DF20487 \uni2DEB \uni2DF2 \uni2DF00487 \uni2DF30487 \uni2DF0 
+	\uni2DF3 \uni2DF4 \uni2DEE0487 \uni2DE0 \uni030B \uni0484 \uniA675 ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+
+} GDEF;
+

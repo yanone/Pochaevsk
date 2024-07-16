@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni2DE8" format="2">
+  <advance width="0"/>
+  <unicode hex="2DE8"/>
+  <anchor x="-193" y="498" name="_Above"/>
+  <anchor x="-193" y="495" name="_Stack"/>
+  <anchor x="-175" y="744" name="Stack"/>
+  <outline>
+    <contour>
+      <point x="-10" y="514" type="line"/>
+      <point x="-62" y="514" type="line"/>
+      <point x="-133" y="656" type="line"/>
+      <point x="-203" y="514" type="line"/>
+      <point x="-273" y="656" type="line"/>
+      <point x="-344" y="514" type="line"/>
+      <point x="-372" y="521" type="line"/>
+      <point x="-372" y="569" type="line"/>
+      <point x="-335" y="559" type="line"/>
+      <point x="-255" y="721" type="line"/>
+      <point x="-184" y="579" type="line"/>
+      <point x="-113" y="721" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>514</integer>
+            <key>width</key>
+            <integer>207</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
