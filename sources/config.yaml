@@ -18,23 +18,23 @@ familyName: "Pochaevsk"
 
 outputDir: ../fonts
 # vfDir: $outputDir/variable
-# ttDir: $outputDir/ttf
-# otDir: $outputDir/otf
-# woffDir: $outputDir/webfonts
+ttDir: $outputDir/ttf
+otDir: $outputDir/otf
+woffDir: $outputDir/webfonts
 
 # The following entries, which are either "true" or "false"
 # determine which targets to build. We turn off OTFs for this demo.
 
 # buildVariable: true
 # buildStatic: true
-buildTTF: false
+buildTTF: true
 buildOTF: true
 # buildSmallCap: false
 
 # The next flags control autohinting.
-# autohintTTF: true
-# autohintOTF: false
-# ttfaUseScript: false  # Set this to true if your font is not Latin
+autohintTTF: true
+autohintOTF: false
+ttfaUseScript: true  # Set this to true if your font is not Latin
 
 # The "fix" operation can optionally fix some problems which
 # are better dealt with in the font sources. Set this to true if you

@@ -81,3 +81,7 @@ characters:
   - five alternative forms of the Symbol for Mark's Chapter (U+1F545)
 
 See your software's documentation about how to access these glyphs.
+
+## More Church Slavonic Fonts
+
+See the [main repository](https://github.com/typiconman/fonts-cu/issues) and the [website](https://sci.ponomar.net/fonts.html).
