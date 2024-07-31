@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1291789194
-ModificationTime: 1721137329
+ModificationTime: 1722406933
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -206,7 +206,7 @@ ContextSub2: class "Contextual Titlo Replacement-1" 5 5 5 3
   BClassNames: "All_Others" "Titlo" "Skinny" "Slim" "Plumpy"
   FClassNames: "All_Others" "Titlo" "Skinny" "Slim" "Plumpy"
 EndFPST
-LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "http://scripts.sil.org/OFL"
+LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "http://scripts.sil.org/OFL" "" "" "" "" "+BCUEQC3tBIcEQgQ+AwEEQQRK +BDIEPgRBBDoEQAQ1AwEEQQQ1 +BDgEhgQ3Az4A +BDwENQMBBEAEQgQyBEsERQRK, +BEEEPAQ1AwEEQARCBFcETgAA +BEEEPAQ1AwEEQARCBEwA +BD8EPgQ/BEAEMAMBBDIESgAA, +BDgEhgAA +BEGmSwMBBEkESwQ8BEoA +BDIEPgAA +BDMEQAQ+BDEEYwMBBEUESgAA +BDYEOAQyBD4DAQRCBEoA +BDQEMARABD4EMgQwAwEEMgRK."
 GaspTable: 3 8 10 16 9 65535 15 1
 Encoding: UnicodeFull
 Compacted: 1
