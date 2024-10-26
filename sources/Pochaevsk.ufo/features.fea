@@ -79,36 +79,36 @@ lookup ss01ChurchSlavonicHyphenation {
     sub \hyphen by \underscore ;
 } ss01ChurchSlavonicHyphenation;
 
-lookup ContextualTitloReplacement {
+lookup ContextualTitloSubstitution {
   lookupflag 0;
     @cc4_match_1 = [\uni0483 ];
     @cc4_match_2 = [\afii10055 \afii10068 \afii10070 \afii10082 \afii10083 \afii10103 ];
     @cc4_match_3 = [\afii10020 \afii10022 \afii10029 \afii10074 \afii10076 \afii10077 \afii10079 
 	\afii10085 \afii10087 \afii10089 ];
     @cc4_match_4 = [\afii10024 \afii10025 \afii10030 \afii10036 \afii10038 \afii10042 \afii10043 
-	\afii10045 \afii10048 \afii10072 \afii10073 \afii10078 \afii10084 
-	\afii10086 \afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B 
-	\uni047E \uni047F \uniA656 ];
+	\afii10045 \afii10048 \afii10073 \afii10078 \afii10084 \afii10086 
+	\afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B \uni047E 
+	\uni047F \uniA656 \uniA657 ];
     @cc4_back_1 = [\uni0483 ];
     @cc4_back_2 = [\afii10055 \afii10068 \afii10070 \afii10082 \afii10083 \afii10103 ];
     @cc4_back_3 = [\afii10020 \afii10022 \afii10029 \afii10074 \afii10076 \afii10077 \afii10079 
 	\afii10085 \afii10087 \afii10089 ];
     @cc4_back_4 = [\afii10024 \afii10025 \afii10030 \afii10036 \afii10038 \afii10042 \afii10043 
-	\afii10045 \afii10048 \afii10072 \afii10073 \afii10078 \afii10084 
-	\afii10086 \afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B 
-	\uni047E \uni047F \uniA656 ];
+	\afii10045 \afii10048 \afii10073 \afii10078 \afii10084 \afii10086 
+	\afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B \uni047E 
+	\uni047F \uniA656 \uniA657 ];
     @cc4_ahead_1 = [\uni0483 ];
     @cc4_ahead_2 = [\afii10055 \afii10068 \afii10070 \afii10082 \afii10083 \afii10103 ];
     @cc4_ahead_3 = [\afii10020 \afii10022 \afii10029 \afii10074 \afii10076 \afii10077 \afii10079 
 	\afii10085 \afii10087 \afii10089 ];
     @cc4_ahead_4 = [\afii10024 \afii10025 \afii10030 \afii10036 \afii10038 \afii10042 \afii10043 
-	\afii10045 \afii10048 \afii10072 \afii10073 \afii10078 \afii10084 
-	\afii10086 \afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B 
-	\uni047E \uni047F \uniA656 ];
-    sub @cc4_match_2' @cc4_match_1'  by [\uni0483.tiny ] ;
-    sub @cc4_match_3' @cc4_match_1'  by [\uni0483.short ] ;
-    sub @cc4_match_4' @cc4_match_1'  by [\uni0483.long ] ;
-} ContextualTitloReplacement;
+	\afii10045 \afii10048 \afii10073 \afii10078 \afii10084 \afii10086 
+	\afii10090 \afii10091 \afii10093 \uni0460 \uni0461 \uni047B \uni047E 
+	\uni047F \uniA656 \uniA657 ];
+    sub @cc4_back_2 @cc4_match_1'  by [\uni0483.tiny ] ;
+    sub @cc4_back_3 @cc4_match_1'  by [\uni0483.short ] ;
+    sub @cc4_back_4 @cc4_match_1'  by [\uni0483.long ] ;
+} ContextualTitloSubstitution;
 
 feature ccmp {
 
@@ -116,18 +116,23 @@ feature ccmp {
      language dflt ;
       lookup ccmpCanonicalCompositionandPrecomposedGlyphs;
       lookup ccmpSecondRoundofPrecomposedGlyphs;
-      lookup ContextualTitloReplacement;
+      lookup ContextualTitloSubstitution;
 
  script cyrl;
      language dflt ;
       lookup ccmpCanonicalCompositionandPrecomposedGlyphs;
       lookup ccmpSecondRoundofPrecomposedGlyphs;
-      lookup ContextualTitloReplacement;
+      lookup ContextualTitloSubstitution;
+
+ script geor;
+     language dflt ;
+      lookup ContextualTitloSubstitution;
 
  script latn;
      language dflt ;
       lookup ccmpCanonicalCompositionandPrecomposedGlyphs;
       lookup ccmpSecondRoundofPrecomposedGlyphs;
+      lookup ContextualTitloSubstitution;
 } ccmp;
 
 feature salt {
