@@ -3,7 +3,7 @@ FontName: Pochaevsk-Regular
 FullName: Pochaevsk
 FamilyName: Pochaevsk
 Weight: Regular
-Copyright: Copyright 2024 The Pochaevsk Project Authors (https://github.com/slavonic/Pochaevsk).
+Copyright: Copyright 2024 The Pochaevsk Project Authors (https://github.com/slavonic/pochaevsk).
 Version: 1.200
 ItalicAngle: 0
 UnderlinePosition: -100
@@ -33,7 +33,7 @@ OS2TypoDOffset: 1
 OS2TypoLinegap: 0
 OS2WinAscent: 0
 OS2WinAOffset: 1
-OS2WinDescent: -33
+OS2WinDescent: 0
 OS2WinDOffset: 1
 HheadAscent: 0
 HheadAOffset: 1

@@ -1734,12 +1734,16 @@ lookup markDiacriticalMarks {
   markClass [\uniA675 ] <anchor -213 519> @Above;
   pos base [\afii10103 ] <anchor 147 623> mark @Yerik
 	<anchor 147 623> mark @Above;
-  pos base [\afii10017 \afii10040 \afii10022 \afii10028 \afii10029 \afii10031 \afii10044 \afii10035 \uniA64A \afii10019 \afii10053 \afii10047 ] <anchor 408 680> mark @Yerik
+  pos base [\afii10017 ] <anchor 408 680> mark @Yerik
 	<anchor 327 680> mark @Above;
   pos base [\afii10018 ] <anchor 388 680> mark @Yerik
 	<anchor 256 680> mark @Above;
+  pos base [\afii10040 ] <anchor 408 680> mark @Yerik
+	<anchor 268 680> mark @Above;
   pos base [\afii10021 ] <anchor 508 680> mark @Yerik
 	<anchor 419 680> mark @Above;
+  pos base [\afii10022 ] <anchor 408 680> mark @Yerik
+	<anchor 266 680> mark @Above;
   pos base [\afii10038 ] <anchor 538 680> mark @Yerik
 	<anchor 329 680> mark @Above;
   pos base [\afii10020 ] <anchor 338 680> mark @Yerik
@@ -1750,17 +1754,29 @@ lookup markDiacriticalMarks {
 	<anchor 275 680> mark @Above;
   pos base [\afii10024 \uni046A ] <anchor 618 680> mark @Yerik
 	<anchor 369 680> mark @Above;
-  pos base [\afii10030 \uniA656 ] <anchor 628 680> mark @Yerik
+  pos base [\afii10028 ] <anchor 408 680> mark @Yerik
+	<anchor 280 680> mark @Above;
+  pos base [\afii10029 ] <anchor 408 680> mark @Yerik
+	<anchor 353 680> mark @Above;
+  pos base [\afii10030 ] <anchor 628 680> mark @Yerik
 	<anchor 475 680> mark @Above;
+  pos base [\afii10031 ] <anchor 408 680> mark @Yerik
+	<anchor 277 680> mark @Above;
   pos base [\afii10032 ] <anchor 377 680> mark @Yerik
 	<anchor 279 680> mark @Above;
   pos base [\afii10033 ] <anchor 418 680> mark @Yerik
 	<anchor 287 680> mark @Above;
+  pos base [\afii10044 ] <anchor 408 680> mark @Yerik
+	<anchor 300 680> mark @Above;
   pos base [\afii10034 ] <anchor 438 680> mark @Yerik
 	<anchor 319 680> mark @Above;
+  pos base [\afii10035 ] <anchor 408 680> mark @Yerik
+	<anchor 239 680> mark @Above;
   pos base [\afii10036 ] <anchor 498 680> mark @Yerik
 	<anchor 308 680> mark @Above;
-  pos base [\afii10042 \afii10043 ] <anchor 658 680> mark @Yerik
+  pos base [\uniA64A \afii10019 \afii10053 ] <anchor 408 680> mark @Yerik
+	<anchor 289 680> mark @Above;
+  pos base [\afii10042 ] <anchor 658 680> mark @Yerik
 	<anchor 397 680> mark @Above;
   pos base [\afii10045 ] <anchor 608 680> mark @Yerik
 	<anchor 379 680> mark @Above;
@@ -1770,7 +1786,7 @@ lookup markDiacriticalMarks {
 	<anchor 257 623> mark @Above;
   pos base [\afii10065 ] <anchor 232 625> mark @Yerik
 	<anchor 233 623> mark @Above;
-  pos base [\afii10088 \afii10076 \afii10085 ] <anchor 397 623> mark @Yerik
+  pos base [\afii10088 \afii10076 ] <anchor 397 623> mark @Yerik
 	<anchor 257 623> mark @Above;
   pos base [\afii10069 \uni1C81 ] <anchor 387 623> mark @Yerik
 	<anchor 257 623> mark @Above;
@@ -1780,15 +1796,17 @@ lookup markDiacriticalMarks {
 	<anchor 347 723> mark @Above;
   pos base [\afii10068 ] <anchor 303 623> mark @Yerik
 	<anchor 197 623> mark @Above;
-  pos base [\afii10087 \afii10077 ] <anchor 327 623> mark @Yerik
+  pos base [\afii10087 ] <anchor 327 623> mark @Yerik
 	<anchor 207 623> mark @Above;
   pos base [\afii10072 ] <anchor 557 623> mark @Yerik
 	<anchor 358 623> mark @Above;
-  pos base [\afii10078 \uni0471 ] <anchor 537 623> mark @Yerik
+  pos base [\afii10077 ] <anchor 327 623> mark @Yerik
+	<anchor 266 623> mark @Above;
+  pos base [\afii10078 ] <anchor 537 623> mark @Yerik
 	<anchor 397 623> mark @Above;
   pos base [\afii10082 \afii10083 ] <anchor 247 623> mark @Yerik
 	<anchor 187 623> mark @Above;
-  pos base [\afii10084 \afii10093 \uniA657 \uniE907 ] <anchor 517 623> mark @Yerik
+  pos base [\afii10084 \afii10093 ] <anchor 517 623> mark @Yerik
 	<anchor 337 623> mark @Above;
   pos base [\uniA64B ] <anchor 367 801> mark @Yerik
 	<anchor 257 802> mark @Above;
@@ -1798,8 +1816,12 @@ lookup markDiacriticalMarks {
 	<anchor 307 623> mark @Above;
   pos base [\afii10046 ] <anchor 403 680> mark @Yerik
 	<anchor 289 680> mark @Above;
+  pos base [\uniA656 ] <anchor 628 680> mark @Yerik
+	<anchor 376 680> mark @Above;
   pos base [\afii10041 ] <anchor 399 680> mark @Yerik
 	<anchor 253 680> mark @Above;
+  pos base [\uniA657 ] <anchor 517 623> mark @Yerik
+	<anchor 347 623> mark @Above;
   pos base [\afii10089 ] <anchor 347 623> mark @Yerik
 	<anchor 217 623> mark @Above;
   pos base [\uniE8E3 ] <anchor 257 871> mark @Yerik
@@ -1810,7 +1832,7 @@ lookup markDiacriticalMarks {
 	<anchor 397 623> mark @Above;
   pos base [\afii10102 ] <anchor 487 623> mark @Yerik
 	<anchor 257 623> mark @Above;
-  pos base [\afii10048 \uni0464 \afii10057 ] <anchor 638 680> mark @Yerik
+  pos base [\afii10048 \uni0464 ] <anchor 638 680> mark @Yerik
 	<anchor 350 680> mark @Above;
   pos base [\uniE8E5 ] <anchor 267 863> mark @Yerik
 	<anchor 267 863> mark @Above;
@@ -1822,13 +1844,15 @@ lookup markDiacriticalMarks {
 	<anchor 334 913> mark @Above;
   pos base [\uniE904 ] <anchor 337 893> mark @Yerik
 	<anchor 337 893> mark @Above;
+  pos base [\afii10043 ] <anchor 658 680> mark @Yerik
+	<anchor 391 680> mark @Above;
   pos base [\afii10101 ] <anchor 437 623> mark @Yerik
 	<anchor 317 623> mark @Above;
   pos base [\afii10027 ] <anchor 287 930> mark @Yerik
 	<anchor 289 930> mark @Above;
   pos base [\uniE8E1 ] <anchor 256 821> mark @Yerik
 	<anchor 257 821> mark @Above;
-  pos base [\uniE926 \afii10104 \afii10105 ] <anchor 137 743> mark @Yerik
+  pos base [\uniE926 ] <anchor 137 743> mark @Yerik
 	<anchor 137 745> mark @Above;
   pos base [\afii10054 ] <anchor 478 680> mark @Yerik
 	<anchor 289 680> mark @Above;
@@ -1838,10 +1862,12 @@ lookup markDiacriticalMarks {
 	<anchor 497 623> mark @Above;
   pos base [\afii10146 ] <anchor 568 680> mark @Yerik
 	<anchor 357 680> mark @Above;
-  pos base [\uni0466 \afii10147 ] <anchor 588 680> mark @Yerik
+  pos base [\uni0466 ] <anchor 588 680> mark @Yerik
 	<anchor 359 680> mark @Above;
-  pos base [\uni0467 \uni1C83 \uniA641 ] <anchor 287 623> mark @Yerik
+  pos base [\uni0467 ] <anchor 287 623> mark @Yerik
 	<anchor 287 623> mark @Above;
+  pos base [\afii10147 ] <anchor 588 680> mark @Yerik
+	<anchor 349 680> mark @Above;
   pos base [\afii10195 ] <anchor 597 623> mark @Yerik
 	<anchor 417 623> mark @Above;
   pos base [\afii10148 ] <anchor 458 680> mark @Yerik
@@ -1858,6 +1884,8 @@ lookup markDiacriticalMarks {
 	<anchor 365 623> mark @Above;
   pos base [\uni0470 ] <anchor 608 740> mark @Yerik
 	<anchor 340 800> mark @Above;
+  pos base [\uni0471 ] <anchor 537 623> mark @Yerik
+	<anchor 537 623> mark @Above;
   pos base [\uni047C ] <anchor 548 1020> mark @Yerik
 	<anchor 549 1020> mark @Above;
   pos base [\uni047D ] <anchor 497 863> mark @Yerik
@@ -1868,18 +1896,24 @@ lookup markDiacriticalMarks {
 	<anchor 407 773> mark @Above;
   pos base [\uni0478 ] <anchor 897 623> mark @Yerik
 	<anchor 727 623> mark @Above;
-  pos base [\uni0479 \uni0461 \uni0469 ] <anchor 637 623> mark @Yerik
+  pos base [\uni0479 ] <anchor 637 623> mark @Yerik
 	<anchor 507 623> mark @Above;
   pos base [\uni0460 ] <anchor 469 680> mark @Above
 	<anchor 718 680> mark @Yerik;
+  pos base [\uni0461 ] <anchor 637 623> mark @Yerik
+	<anchor 397 623> mark @Above;
   pos base [\uni046E ] <anchor 482 800> mark @Yerik
 	<anchor 289 800> mark @Above;
   pos base [\uni046F ] <anchor 367 683> mark @Yerik
 	<anchor 257 683> mark @Above;
+  pos base [\afii10085 ] <anchor 397 623> mark @Yerik
+	<anchor 227 623> mark @Above;
   pos base [\afii10037 ] <anchor 440 680> mark @Yerik
 	<anchor 289 680> mark @Above;
   pos base [\afii10056 ] <anchor 133 891> mark @Yerik
 	<anchor 131 892> mark @Above;
+  pos base [\afii10104 \afii10105 ] <anchor 137 743> mark @Yerik
+	<anchor 137 743> mark @Above;
   pos base [\uni0450 ] <anchor 177 925> mark @Yerik
 	<anchor 177 923> mark @Above;
   pos base [\uni0400 ] <anchor 408 951> mark @Yerik
@@ -1890,8 +1924,12 @@ lookup markDiacriticalMarks {
 	<anchor 245 938> mark @Above;
   pos base [\afii10061 ] <anchor 324 938> mark @Yerik
 	<anchor 325 938> mark @Above;
-  pos base [\uni040D \afii10062 ] <anchor 288 920> mark @Yerik
+  pos base [\uni040D ] <anchor 288 920> mark @Yerik
 	<anchor 289 919> mark @Above;
+  pos base [\afii10062 ] <anchor 288 920> mark @Yerik
+	<anchor 289 920> mark @Above;
+  pos base [\afii10047 ] <anchor 408 680> mark @Yerik
+	<anchor 272 680> mark @Above;
   pos base [\afii10095 ] <anchor 457 623> mark @Yerik
 	<anchor 307 623> mark @Above;
   pos base [\afii10071 ] <anchor 157 743> mark @Yerik
@@ -1918,12 +1956,22 @@ lookup markDiacriticalMarks {
 	<anchor 878 680> mark @Yerik;
   pos base [\uni046D ] <anchor 597 623> mark @Above
 	<anchor 837 623> mark @Yerik;
+  pos base [\uni0469 ] <anchor 507 623> mark @Above
+	<anchor 717 623> mark @Yerik;
+  pos base [\uni1C83 ] <anchor 287 623> mark @Above
+	<anchor 417 623> mark @Yerik;
   pos base [\uni1C85 ] <anchor 407 623> mark @Above
 	<anchor 705 623> mark @Yerik;
+  pos base [\uniE907 ] <anchor 517 623> mark @Yerik
+	<anchor 517 623> mark @Above;
   pos base [\uni0460.alt ] <anchor 728 680> mark @Yerik
 	<anchor 429 680> mark @Above;
+  pos base [\afii10057 ] <anchor 350 680> mark @Above
+	<anchor 440 679> mark @Yerik;
   pos base [\uniA640 ] <anchor 327 903> mark @Above
 	<anchor 327 903> mark @Yerik;
+  pos base [\uniA641 ] <anchor 287 623> mark @Above
+	<anchor 367 623> mark @Yerik;
 } markDiacriticalMarks;
 
 lookup mkmkStackingofDiacriticalMarks {
