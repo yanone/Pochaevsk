@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1291789194
-ModificationTime: 1737704170
+ModificationTime: 1737751641
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -209,13 +209,12 @@ EndFPST
 LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "http://scripts.sil.org/OFL" "" "" "" "" "+BCUEQC3tBIcEQgQ+AwEEQQRK +BDIEPgRBBDoEQAQ1AwEEQQQ1 +BDgEhgQ3Az4A +BDwENQMBBEAEQgQyBEsERQRK, +BEEEPAQ1AwEEQARCBFcETgAA +BEEEPAQ1AwEEQARCBEwA +BD8EPgQ/BEAEMAMBBDIESgAA, +BDgEhgAA +BEGmSwMBBEkESwQ8BEoA +BDIEPgAA +BDMEQAQ+BDEEYwMBBEUESgAA +BDYEOAQyBD4DAQRCBEoA +BDQEMARABD4EMgQwAwEEMgRK."
 GaspTable: 3 8 10 16 9 65535 15 1
 Encoding: UnicodeFull
-Compacted: 1
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 270 27 9
+WinInfo: 999 27 9
 BeginPrivate: 6
 BlueScale 8 0.039625
 BlueShift 1 7
@@ -229,7 +228,7 @@ Grid
  2000 500 l 1024
 EndSplineSet
 AnchorClass2: "Stack" "'mkmk' Stacking of Diacritical Marks-1" "Yerik" "'mark' Diacritical Marks-1" "Above" "'mark' Diacritical Marks-1"
-BeginChars: 1114116 520
+BeginChars: 1114116 522
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -4509,12 +4508,12 @@ SplineSet
  712 21 l 1
  762 21 l 1
  762 0 l 1
- 455 0 l 1
- 455 -59 461 -79 504 -103 c 1
- 451 -122 426 -142 398 -202 c 1
- 383 -172 369 -150 354 -137 c 0
- 339 -124 319 -112 292 -103 c 1
- 333 -79 342 -60 342 0 c 1
+ 455 0 l 5
+ 455 -59 461 -79 504 -103 c 5
+ 451 -122 426 -142 398 -202 c 5
+ 383 -172 369 -150 354 -137 c 4
+ 339 -124 319 -112 292 -103 c 5
+ 333 -79 342 -60 342 0 c 5
  34 0 l 1
 EndSplineSet
 Validated: 1
@@ -23910,6 +23909,79 @@ SplineSet
  260 711 280 674 295 633 c 1
  355 701 l 1
  375 722 391 737 403 746 c 1
+EndSplineSet
+EndChar
+
+StartChar: afii10145
+Encoding: 1039 1039 520
+Width: 556
+Flags: W
+HStem: 0 21<31 86 200 224 336 355 469 525> 607 21<31 86 200 255 300 355 469 525>
+VStem: 86 114<21 607> 224 112<-81.5575 0> 355 114<21 607>
+AnchorPoint: "Yerik" 410 680 basechar 0
+AnchorPoint: "Above" 277 680 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+280 -202 m 1
+ 258 -158 238 -124 174 -103 c 1
+ 215 -79 224 -60 224 0 c 1
+ 31 0 l 1
+ 31 21 l 1
+ 86 21 l 1
+ 86 607 l 1
+ 31 607 l 1
+ 31 628 l 1
+ 255 628 l 1
+ 255 607 l 1
+ 200 607 l 1
+ 200 21 l 1
+ 355 21 l 1
+ 355 607 l 1
+ 300 607 l 1
+ 300 628 l 1
+ 525 628 l 1
+ 525 607 l 1
+ 469 607 l 1
+ 469 21 l 1
+ 525 21 l 1
+ 525 0 l 1
+ 336 0 l 1
+ 336 -59 343 -79 386 -103 c 1
+ 333 -122 308 -142 280 -202 c 1
+EndSplineSet
+EndChar
+
+StartChar: afii10193
+Encoding: 1119 1119 521
+Width: 500
+Flags: W
+HStem: -249 21G<234.5 249.5> 0 23<168 190.124 298.735 323> 431 20G<81 189 324 433>
+VStem: 67 101<23 265.438> 231 66<-194.715 -42.2369> 318 110<23 446.066> 330 103<181.725 451>
+AnchorPoint: "Yerik" 367 623 basechar 0
+AnchorPoint: "Above" 257 623 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+189 451 m 1xfc
+ 172 332 168 151 168 107 c 0
+ 168 75 168 43 168 23 c 1
+ 323 23 l 1
+ 323 58 318 96 318 171 c 0xfc
+ 318 224 318 346 330 451 c 1
+ 433 451 l 1xfa
+ 433 344 428 237 428 174 c 0
+ 428 119 432 62 432 0 c 1
+ 375 0 l 2
+ 297 0 297 0 297 -30 c 0
+ 297 -168 261 -249 238 -249 c 0
+ 231 -249 231 -245 231 -236 c 2
+ 231 -191 l 1
+ 231 -136 226 -73 207 -37 c 0
+ 188 -1 184 0 131 0 c 2
+ 67 0 l 1
+ 67 203 72 288 90 451 c 1
+ 189 451 l 1xfc
 EndSplineSet
 EndChar
 EndChars
