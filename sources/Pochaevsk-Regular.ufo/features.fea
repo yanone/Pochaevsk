@@ -1968,10 +1968,12 @@ lookup markDiacriticalMarks {
 	<anchor 429 680> mark @Above;
   pos base [\afii10057 ] <anchor 350 680> mark @Above
 	<anchor 440 679> mark @Yerik;
-  pos base [\uniA640 ] <anchor 327 903> mark @Above
+  pos base [\uniA640 \uni0480 \uniA642 ] <anchor 327 903> mark @Above
 	<anchor 327 903> mark @Yerik;
-  pos base [\uniA641 ] <anchor 287 623> mark @Above
+  pos base [\uniA641 \uniA643 ] <anchor 287 623> mark @Above
 	<anchor 367 623> mark @Yerik;
+  pos base [\uni0481 ] <anchor 349 623> mark @Yerik
+	<anchor 253 623> mark @Above;
 } markDiacriticalMarks;
 
 lookup mkmkStackingofDiacriticalMarks {
@@ -2185,7 +2187,8 @@ feature mkmk {
 	\idieresis \eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \divide 
 	\oslash \ugrave \uacute \ucircumflex \udieresis \yacute \thorn \ydieresis 
 	\dotlessi \OE \oe \circumflex \ring \tilde \guilsinglleft \guilsinglright 
-	\fraction \uni2074 \figuredash \minus \uni2215 ];
+	\fraction \uni2074 \figuredash \minus \uni2215 \uni0481 \uni0480 \uniA643 
+	\uniA642 ];
 @GDEF_Ligature = [\uniE8E3 \afii10075 \uniE8E5 \uniE901 \uniE903 \uniE904 
 	\afii10027 \uniE8E1 \uniE926 \uni0476 \uni0477 \uni047C \uni047D \uni0479 
 	\afii10056 \afii10104 \uni0450 \uni0400 \afii10023 \afii10052 \afii10061 
