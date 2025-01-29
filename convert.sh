@@ -13,3 +13,7 @@ fi
 
 # Run FontForge with the provided arguments
 $FONTFORGE_BIN -lang=ff -c 'Open($1); Generate($2)' sources/Pochaevsk.sfd sources/Pochaevsk-Regular.ufo
+
+# Dirty hack to add the openTypeOS2Selection key to the fontinfo.plist file
+FONTINFO=`cat sources/Pochaevsk-Regular.ufo/fontinfo.plist`
+echo "${FONTINFO/    <key>openTypeOS2Type<\/key>/    <key>openTypeOS2Selection</key>$'\n'    <array>$'\n'      <integer>7</integer>$'\n'    </array>$'\n'    <key>openTypeOS2Type</key>}" > sources/Pochaevsk-Regular.ufo/fontinfo.plist
